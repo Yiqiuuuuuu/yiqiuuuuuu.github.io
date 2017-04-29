@@ -5,7 +5,7 @@
 
     <!-- BEGIN head -->
 	<head>
-		<title>Yiqiu's Github Personal Website</title>
+		<title>Yiqiu's Github User Page</title>
 		
 		<meta name="keywords" content="Yiqiu's Github Personal Website, Github Personal Website Example">  
 		<meta name="description" content="This Github Personal Website was developed by Yiqiu who is a front-end web developer.(well, I have to say that she is also a charming lady...)">
@@ -13,8 +13,8 @@
 		
 		
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/homepage.css">
+		<link rel="stylesheet" type="text/css" href="css/fixedCSS.css">
+		<link rel="stylesheet" type="text/css" href="css/contentCSS.css">
 		
 		
 		<!-- link to Font Awesome Icons -->
@@ -40,7 +40,7 @@
 	    
 	        <img class="profilePhoto" alt="Yiqiu's profile photo" src="pic/profilePhoto.jpg" width="50px" height="50px">
 	        
-	        <a class="topPageName" href="https://yiqiuuuuuu.github.io/"><b>Yiqiu's Github Personal Page</b></a>
+	        <a class="topPageName" href="https://yiqiuuuuuu.github.io/"><b>Yiqiu's Github User Page</b></a>
 	    	    
 	    </div>
 	    <!-- END header -->
@@ -50,7 +50,7 @@
 	    
 	  
 		<!-- BEGIN vertical navigation bar -->
-		<div>
+		<div class="sideBar">
     		<ul class="sideBar-ul">
         		<li class="sideBar-li"><a class="active" href="/">Home</a></li>
 	        	<li class="sideBar-li"><a href="/about">Yiqiu's Resume</a></li>
@@ -66,13 +66,18 @@
 		
 
 		<!-- BEGIN tutorial list -->
-		<div>
-		   <ul class="list-ul">
-		       <li style="list-style-type: none; font-size: 26px; padding: 12px 20px;">Useful Tutorials</li>
-		       <li class="list-li"><a href="https://www.w3schools.com/">w3schools</a></li>
-		       <li class="list-li"><a href="https://www.w3schools.com/">w3schools</a></li>
-		       <li class="list-li"><a href="https://www.w3schools.com/">w3schools</a></li>
+		<div class="sideList">
+		   <ul class="sideList-ul">
+		       <li style="list-style-type: none; font-size: 26px; padding: 12px 10px;"><i style="font-size: 22px;" class="fa fa-link" aria-hidden="true"></i>&nbsp Useful Links:</li>
+		       <li class="sideList-li"><a href="https://github.com/">Github</a></li>
+		       <li class="sideList-li"><a href="https://www.w3schools.com/">w3schools</a></li>
 		   </ul>
+		   <br><br><br><br><br><br><br><br>
+		    <ul class="sideList-ul">
+		       <li style="list-style-type: none; font-size: 26px; padding: 12px 10px;"><i style="font-size: 22px;" class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp Contact Me:</li>
+		       <li class="sideList-li"><a style="font-size:20px;" href="mailto:mlle.qiu@outlook.com">mlle.qiu@outlook.com</a></li>
+		   </ul>
+		   
 		</div>
 		<!-- END tutorial list -->
 		
@@ -84,49 +89,78 @@
 		
 		<!-- BEGIN content page -->
 		<div class="content">
+		
+		
+		
+		<!-- BEGIN homePage -->
+		<div id="homePage">
+		
+		<h2>Home</h2>
+		
+		<p style="font-size:25px;">Hi there! <br> I'm Yiqiu. Do you wanna read more about my life?</p>
 
 		<canvas id="timePieChart">aaaaaaaaaaaa</canvas>
-		<script type="text/javascript" src="js/home.js"></script>
+		<script type="text/javascript" src="js/homepage.js"></script>
 		
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
+		</div>
+		<!-- END homePage -->
+		
+		
+		
+		<!-- BEGIN resume -->
+		<div id="resume">
+		
+		<h2>Yiqiu's Resume</h2>
+		
+		<p style="font-size:25px;">Hi there! <br> I'm Yiqiu. Do you wanna read more about my life?</p>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
+		</div>
+		<!-- END resume -->
+		
+		
+		
+		<!-- BEGIN technical blogs -->
+		<div id="techBlog">
+		
+		<h2>Technical Blogs</h2>
+		
+		<p style="font-size:25px;">Hi there! <br> I'm Yiqiu. Do you wanna read more about my life?</p>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
+		</div>
+		<!-- END technical blogs -->
+		
+		
+		
+		<!-- BEGIN volunteer -->
+		<div id="volunteer">
+		
+		<h2>Volunteers</h2>
+		
+		<p style="font-size:25px;">Hi there! <br> I'm Yiqiu. Do you wanna read more about my life?</p>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>			
+		</div>
+		<!-- END volunteer-->
+		
+		
+		
+			
 		</div>
 		<!-- END content page -->
 		
