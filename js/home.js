@@ -5,7 +5,7 @@ var myCanvas = document.getElementById("timePieChart");
 myCanvas.width = 300;
 myCanvas.height = 300;
  
-var ctx = timePieChart.getContext("2d"); //get reference to its 2D context which contains all the drawing methods
+var ctx = myCanvas.getContext("2d"); //get reference to its 2D context which contains all the drawing methods
 
 
 //draw line
@@ -94,4 +94,11 @@ var myPiechart = new Piechart(
 	        colors:["#fde23e","#f16e23", "#57d9ff","#937e88"]
 	    }
 	);
-	myPiechart.draw();
+
+myPiechart.draw();	
+		
+	
+	
+	
+
+
