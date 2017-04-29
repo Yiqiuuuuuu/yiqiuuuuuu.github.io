@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+}
+
+div.fixed-header {
+	position:fixed;
+	background-color:#006699;
+	width:100%;
+	height:70px;
+	padding:0px;
+	margin:0px;
+	top:0px;
+	z-index: 1;
+}
+
+img.profilePhoto {
+	position: absolute;
+	top:10px;
+	left:10px;
+	border-radius: 8px;
+}
+
+a.topPageName {	
+	text-decoration: none;
+    font-size: 37px;
+    color: #f2ede3;
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 90px;
+    /*background-color: #10A296;*/	
+}
+
+
+div.content {
+    position:relative;
+    top:70px;
+	padding: 12px 20px;
+	margin:auto;
+	width: 70%;
+	height: 1500px;
+	/*background-color: lightblue;*/
+	overflow-y: auto;
+}
+
+
+div.sideBar {
+	position: fixed;
+	top:70px;
+    left:0%;
+    width: 15%;
+    height: 100%;
+    background-color: grey; 
+    border: 2px solid #404040;
+}
+
+ul.sideBar-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+li.sideBar-li {
+	border-bottom: 2px solid #404040;
+}
+
+li.sideBar-li a {
+    display: block;
+    color: #f2ede3;
+    padding: 12px 10px;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+li.sideBar-li a:hover:not(.active) {
+	background-color: #666666;
+}
+
+.active {
+	background-color: #4d4d4d;
+	color: #f2ede3;
+}
+
+div.sideList {
+	position: fixed;
+	top:70px;
+	right: 0%;
+	background-color: grey;
+	width: 15%;
+    height: 100%;
+    border: 2px solid #666666;
+}
+
+ul.sideList-ul {
+    list-style-type: none;
+    padding: 0px;
+	margin: 0px; 
+    color: #f2ede3;
+    overflow: auto;
+}
+
+li.sideList-li a{
+    display: block;
+    color: #f2ede3;
+    padding: 5px 5px;
+    /*text-decoration: none;*/
+    font-size: 22px;
+}
+
+li.sideList-li a:hover {
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+a:link.topPageName{
+	color:white;
+}
+
+
+
+a:link {
+	color:black
+}
+
+a:visited {
+	color:grey
+}
+
+a:hover {
+	color:green
+}
+*/
