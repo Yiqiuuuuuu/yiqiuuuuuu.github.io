@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -11,6 +12,8 @@
 		<meta name="description" content="This Github Personal Website was developed by Yiqiu who is a front-end web developer.(well, I have to say that she is also a charming lady...)">
 		<meta name="author" content="Yiqiu">
 		
+		<!-- take control over the viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/fixedCSS.css">
@@ -18,7 +21,10 @@
 		
 		
 		<!-- link to Font Awesome Icons -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		
+		
 
 	</head>
 	<!-- END head -->
@@ -31,7 +37,7 @@
 	
 	    
 	    
-	    
+	   
 	    
 	    
 	
@@ -47,10 +53,14 @@
 	    
 	    
 	    
+	     <!-- BEGIN .row -->
+	     <div class="row">
+	    
+	    
 	    
 	  
 		<!-- BEGIN vertical navigation bar -->
-		<div class="sideBar">
+		<div class="sideBar col-2 col-m-4">
     		<ul class="sideBar-ul">
         		<li class="sideBar-li"><a class="active" href="/">Home</a></li>
 	        	<li class="sideBar-li"><a href="/about">Yiqiu's Resume</a></li>
@@ -64,31 +74,11 @@
 		
 		
 		
-
-		<!-- BEGIN tutorial list -->
-		<div class="sideList">
-		   <ul class="sideList-ul">
-		       <li style="list-style-type: none; font-size: 26px; padding: 12px 10px;"><i style="font-size: 22px;" class="fa fa-link" aria-hidden="true"></i>&nbsp Useful Links:</li>
-		       <li class="sideList-li"><a href="https://github.com/">Github</a></li>
-		       <li class="sideList-li"><a href="https://www.w3schools.com/">w3schools</a></li>
-		   </ul>
-		   <br><br><br><br><br><br><br><br>
-		    <ul class="sideList-ul">
-		       <li style="list-style-type: none; font-size: 26px; padding: 12px 10px;"><i style="font-size: 22px;" class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp Contact Me:</li>
-		       <li class="sideList-li"><a style="font-size:20px;" href="mailto:mlle.qiu@outlook.com">mlle.qiu@outlook.com</a></li>
-		   </ul>
-		   
-		</div>
-		<!-- END tutorial list -->
-		
-		
-		
-		
 		
 		
 		
 		<!-- BEGIN content page -->
-		<div class="content">
+		<div class="content col-8 col-m-8">
 		
 		
 		
@@ -96,11 +86,15 @@
 		<div id="homePage">
 		
 		<h2>Home</h2>
+		<p style="font-size:1.6em;">Hi there! <br> I'm Yiqiu. Do you wanna read more about my life?hikihoihoihuo giub gi t8t87tyr tyr7d57. uv y7g8 gy 8g8.</p>
 		
-		<p style="font-size:25px;">Hi there! <br> I'm Yiqiu. Do you wanna read more about my life?</p>
-
-		<canvas id="timePieChart">aaaaaaaaaaaa</canvas>
-		<script type="text/javascript" src="js/homepage.js"></script>
+		
+		<div class="pieChartArea">
+		    <canvas id="pieChart" width="500px" height="500px">aaaaaaaaaaaa</canvas>
+		    <script type="text/javascript" src="js/homepage.js"></script>
+		    <div class="pieLable">SLEEP</div>
+		</div>
+		
 		
 		<p>a</p>
 		<p>a</p>
@@ -170,6 +164,27 @@
 		
 		
 		
+
+		<!-- BEGIN link list -->
+		<div class="sideList col-2 col-m-12">
+		   <ul class="sideList-ul">
+		       <li style="list-style-type: none; font-size: 26px; padding: 12px 10px;"><i style="font-size: 22px;" class="fa fa-link" aria-hidden="true"></i>&nbsp Useful Links:</li>
+		       <li class="sideList-li"><a href="https://github.com/">Github</a></li>
+		       <li class="sideList-li"><a href="https://www.w3schools.com/">w3schools</a></li>
+		   </ul>
+		   <br><br><br><br><br><br><br><br>
+		    <ul class="sideList-ul">
+		       <li style="list-style-type: none; font-size: 26px; padding: 12px 10px;"><i style="font-size: 22px;" class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp Contact Me:</li>
+		       <li class="sideList-li"><a href="mailto:mlle.qiu@outlook.com">mlle.qiu@outlook.com</a></li>
+		   </ul>
+		   
+		</div>
+		<!-- END link list -->
+		
+		
+	    </div>
+	    <!-- END .row -->
+		
 		
 		
 		
@@ -178,10 +193,7 @@
 		
 		<!-- BEGIN footer -->
 		<footer>
-    		<ul>
-        		<li><a href="mailto:mlle.qiu@gmail.com">email</a></li>
-        		<li><a href="https://github.com/Yiqiuuuuuu/yiqiuuuuuu.github.io">https://github.com/Yiqiuuuuuu/yiqiuuuuuu.github.io</a></li>
-		</ul>
+    		<p> © Yiqiu 2017</p>
 		</footer>
 	    <!-- END footer -->
 	    
@@ -190,7 +202,7 @@
 	
 	
 	
-	
+
 	
 	
 	
