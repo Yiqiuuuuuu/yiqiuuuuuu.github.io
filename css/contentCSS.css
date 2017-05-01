@@ -1,15 +1,45 @@
-#homePage {
-	width: 100%;
-	box-sizing: border-box;
-	margin:0px;
-	padding:0px;
-	background-color: white;	
-}
-
 h2 {
 	margin:0px; 
 	padding-bottom: 3px;
 	border-bottom: 5px solid grey;
-	font-size: 30px;
+	font-size: 1.9em;
 	font-variant: small-caps;
+	/*background-color: green;*/
 }
+
+#homePage {
+	position: relative;
+	width: 100%;
+	overflow: auto;
+	box-sizing: border-box;
+	background-color: lightblue;	
+}
+
+div.pieChartArea {
+	position:relative;
+	width:100%;
+	height:1000px;
+	padding:0px;
+	border: 5px solid red;
+}
+
+
+canvas {
+	position:absolute;
+	direction: 1tr;
+	top: 0;
+	left:0;
+	/*background-color:red;*/
+}
+
+
+div.pieLable {
+	position:absolute;
+	top:0;
+	left:50%;
+	font-size: 1.6em;
+	font-weight: bold;
+	color:#3973ac;
+	/*background-color: red;*/
+}
+
