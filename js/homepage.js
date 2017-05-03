@@ -37,5 +37,4 @@ function drawLine(ctx, startX, startY, endX, endY, linewidth, color){
     ctx.stroke();
 }
 
-//draw those lines
-drawLine(ctx,550,600,650,720,8,'#3973ac'); drawLine(ctx,646,718,950,718,8,'#3973ac');
+
