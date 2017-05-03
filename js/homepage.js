@@ -1,6 +1,5 @@
-var myCanvas = document.getElementById("timePieChart");
-myCanvas.width = 1000;
-myCanvas.height =1000;
+var myCanvas = document.getElementById("pieChart");
+
  
 var ctx = myCanvas.getContext("2d"); //get reference to its 2D context which contains all the drawing methods
 
@@ -36,5 +35,8 @@ function drawLine(ctx, startX, startY, endX, endY, linewidth, color){
     ctx.strokeStyle=color;
     ctx.stroke();
 }
+
+//draw those lines
+drawLine(ctx,550,600,650,720,8,'#3973ac'); drawLine(ctx,646,718,950,718,8,'#3973ac');
 
 
