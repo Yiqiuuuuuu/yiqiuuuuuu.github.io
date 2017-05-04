@@ -88,7 +88,7 @@ img.profilePhoto {
 a.topPageName-small {	
 	position: absolute;
 	text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-transform: uppercase;
     color: white;
     left:65px;
@@ -121,6 +121,7 @@ div.sideBar {
    /*border: 2px solid #404040;*/
 }
 
+
 ul.sideBar-ul {
     list-style-type: none;
     margin: 0;
@@ -131,7 +132,7 @@ ul.sideBar-ul {
 li.sideBar-li {
 	/*border-bottom: 2px solid #404040;*/
 	/*border-radius: 10px;*/
-    /*background-color: #b3b3b3;*/
+    background-color: #e6e6e6;
 }
 
 li.sideBar-li a {
@@ -139,8 +140,8 @@ li.sideBar-li a {
     color: #333;
     padding: 12px 10px;
     text-decoration: none;
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.3em;
+    /*text-align: center;*/
     font-weight: bold;
     font-variant: small-caps; 
 }
@@ -150,10 +151,30 @@ li.sideBar-li a:hover:not(.active) {
 	color:white;
 }
 
-.active {
-	background-color: rgba(0,0,0,0.02);
-	color: #f2ede3;
+a.active {
+	/*background-color: #e6e6e6;*/
 }
+
+li.subSideBar-li {
+	/*display:none;*/
+}
+
+li.subSideBar-li a {
+    display: block;
+    color: #333;
+    padding: 12px 10px;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    /*font-variant: small-caps;*/ 
+}
+
+li.subSideBar-li a:hover:not(.active) {
+	background-color: #cccccc;
+	color:white;
+}
+
 
 div.sideList {
 	/*position: fixed;*/
@@ -179,7 +200,7 @@ li.sideList-li a{
     color: #f2ede3;
     padding: 5px 5px;
     /*text-decoration: none;*/
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-align: center;
 }
 
