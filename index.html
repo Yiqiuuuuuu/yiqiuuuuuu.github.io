@@ -7,8 +7,8 @@
 	<head>
 		<title>Yiqiu's Github User Page</title>
 		
-		<meta name="keywords" content="Yiqiu's Github Personal Website, Github Personal Website Example">  
-		<meta name="description" content="This Github Personal Website was developed by Yiqiu who is a front-end web developer.(well, I have to say that she is also a charming lady...)">
+		<meta name="keywords" content="Yiqiu's Github User Page, Github User Page Example">  
+		<meta name="description" content="This Github User Page was developed by Yiqiu who is a front-end web developer.">
 		<meta name="author" content="Yiqiu">
 		
 		<!-- take control over the viewport -->
@@ -33,13 +33,12 @@
 	
 	<!-- BEGIN body -->
 	<body>
-	
-	    
-	    
+	   
+	    <script type="text/javascript" src="js/SideBarJS.js"></script>
 	   
 	
 	    <!-- BEGIN header -->
-	    <div class="header">
+	    <div class="header" id="pageTop">
 	        
 	        <img class="profilePhoto" alt="Yiqiu's profile photo" src="pic/profilePhoto.jpg">
 	        
@@ -53,15 +52,18 @@
 	    
 	 <!-- BEGIN .row -->
 	 <div class="row">
-	    
-	    
-	    
+
 	  
 		<!-- BEGIN vertical navigation bar -->
 		<div class="sideBar col-2 col-m-4">
     		<ul class="sideBar-ul">
-        		<li class="sideBar-li"><a class="active" href="#aboutMe">About Me</a></li>
+        		<li class="sideBar-li"><a onclick="showSubMenu()" href="#pageTop">About Me</a></li>
+        		         <li class="subSideBar-li"><a href="#whoIam">Who I Am</a></li>
+        		     	 <li class="subSideBar-li"><a href="#resume">Resume</a></li>
         		<li class="sideBar-li"><a href="#aboutThisPage">About This Page</a></li>
+        		         <li class="subSideBar-li"><a href="#wgup">What's Github User Page</a></li>
+        		     	 <li class="subSideBar-li"><a href="#rwd">Responsive Web Design</a></li>
+                         <li class="subSideBar-li"><a href="#htdapc">How to draw A Pie Chart</a></li>
     		</ul>
 		</div>
 		<!-- END vertical navigation bar -->
@@ -79,77 +81,96 @@
 		
 		
 		<!-- BEGIN aboutMe -->
-		<div id="aboutMe">
+		<div>
 		
 		<h1>About Me</h1>
-		<p>Hi there! <br> I'm Yiqiu. This is my Github User Page. <br>Try to visit this site using your tablet and smart phones, and see what's the difference.</p>
+        <h2 id="whoIam">Who I Am</h2>
+		<br>
+        <p>I am a front-end developer. My favorite part about front-end programming is that it can seem like a very prescriptive, direct, binary kind of job, but there’s actually a lot of creativity and ingenuity involved.</p><br>
+        <p>I am an alumna of <a class="schoolLink" href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, graduating with a major in Electrical Engineering. Originally from Dalian, China, but now residing in Montreal, Canada.</p><br>
+        <p>I want to improve my programming skills and join an amazing team. Take some time to look at my credentials and this page which I designed recently. If you're interested in helping me make this happen, let's get in touch.</p>
+				
+<!--		<div class="pieChartArea">-->
+<!--		    <canvas id="pieChart" width="400px" height="400px">aaaaaaaaaaaa</canvas>-->
+<!--            <script type="text/javascript" src="js/homepage.js"></script>-->
+<!--        </div>-->
 		
+		<br><br>
+		<h2 id="resume">Resume</h2><br>
+		<b>Yiqiu Wang</b><br>
+		<b>Email: mlle.qiu@outlook.com</b><br>
+		<b>Address: Montreal, QC CANADA</b><br><br>
+		<p>A software developer engaged in front-end web development and user interface design. Keen to work on new and existing micro-sites, landing pages, and templates and provide guidance and troubleshooting support to clients. Currently looking for a new position. </p><br>
 		
-		<div class="pieChartArea">
-		    <canvas id="pieChart" width="500px" height="500px">aaaaaaaaaaaa</canvas>
-		    <script type="text/javascript" src="js/homepage.js"></script>
-		    <div class="pieLable">SLEEP</div>
-		</div>
+		<b>Degrees</b>
+		<ul style="margin:0px;">
+            <li><p>Master of Applied Science in Electrical Engineering<br><a class="schoolLink" href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, Montreal, QC Canada<br>Jan.2013-October.2015</li>
+            <li><p>Bachelor of Science in Electrical Engineering<br><a class="schoolLink" href="http://en.dlut.edu.cn/">Dalian University of Technology</a>, Dalian, LN China<br>Sep.2008-Jun.2012</p></li>
+		</ul><br>
 		
+		<b>Professional Employment</b><br>
+        <p>Junior Software Engineer &nbsp &nbsp Apr.2016 – Feb.2017</p>
+            <p><a class="schoolLink" href="http://www.dhc.com.cn/en/index.action">Dalian Hi-Think Computer Technology, Corp.</a>, an IT company provides leading application software products, information service and industrial solutions for global customers.</p> 
+
+        <ul style="margin:0px;">
+            <li><p>Consulted with clients, identified their requirements, maintained and developed cordial relationship with the clients</p></li>
+            <li><p>Participated in developing a customized industrial Intelligence Manufacturing (IM) System – decoded private communication protocols of clients' mechanical equipment</p></li>
+            <li><p>Provided on-site software deployment, guided clients in incorporating the product in their work set up</p></li>
+            <li><p>Prepared technical materials for clients' reference, informed about the project details to the clients and clarified their queries.</p></li>
+        </ul><br>
 		
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
-		<p>a</p>
+		<b>Technology Applications and Expertise Specialized Skills:</b>
+        <p>User Interface Design, User Testing, Front-End Web Development, Accessibility, Web Design, Web Analytics</p><br>
+		<b>Markup/Programming:</b>
+        <p>XTHML, HTML5, CSS, CSS3, JavaScript, Ruby/Rails, XML, XSLT, EPUB3, PHP, Perl, MySQL</p>
+		
+		<br>
 		</div>
 		<!-- END aboutMe -->
 		
 		
 		
-		<!-- BEGIN resume -->
-		<div id="resume">
-		
-		<h1>Yiqiu's Resume</h1>
-		<b>Yiqiu Wang</b><br>
-		<b>Email: mlle.qiu@outlook.com</b><br>
-		<b>Address: Montreal, QC CANADA</b><br>
-		<p>Software engineer engaged in front end development and user interface design. Keen to .....Currently looking for a new position. 
-		Front End Developers work on new and existing micro-sites, landing pages, and templates and provide guidance and troubleshooting support to clients. 
-		</p>
-		
-		<h2>Degrees</h2>
-		<ul style="margin:0px;">
-		   <li><p>Master of Applied Science in Electrical Engineering<br>École Polytechnique de Montréal, Montreal, QC Canada<br>Jan.2013-October.2015</li>
-		   <li><p>Bachelor of Science in Electrical Engineering<br>Dalian University of Technology, Dalian, LN China<br>Sep.2008-Jun.2012</p></li>
-		</ul>
-		
-		<h2>Professional Employment</h2>
-		<b>Junior Software Engineer</b>
-		<p>Apr.2016 – Feb.2017<br>Dalian Hi-Think Computer Technology, Corp., an IT company to provide leading application software products, information service and industrial solutions for global customers. 
-Consulted with clients, identified their requirements, maintained and developed cordial relationship with the clients.
-Participated in developing a customized industrial Intelligence Manufacturing (IM) System – decoded private communication protocols of clients' mechanical equipment.
-Provided on-site software deployment, guided clients in incorporating the product in their work set up.
-Prepared technical materials for clients' reference, informed about the project details to the clients and clarified their queries.</p>
-		
-		<h2>Technology Applications and Expertise</h2>
-		<b>Specialized Skills:</b><p>User Interface Design, User Testing, Front-End Web Development, Accessibility, Web Design, Web Analytics</p>
-		<b>Markup/Programming:</b><p>XTHML, HTML5, CSS, CSS3, JavaScript, Ruby/Rails, XML, XSLT, EPUB3, PHP, Perl, MySQL</p>
-		
-		<br>
-		</div>
-		<!-- END resume -->
-		
-		
-		
-		
-		
 		<!-- BEGIN aboutThisPage -->
-		<div id="aboutThisPage">
+		<div>
 		
-		<h1>Volunteers</h1>
-		
-		<p style="font-size:25px;">Hi there! <br> I'm Yiqiu. This is my Github User Page. <br>Try to visit this site using your tablet and smart phones, and see what's difference.</p>
+		<h1 id="aboutThisPage">About This Page</h1>
+		<h2 id="wgup">What's Github User Page</h2>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
 		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+         
+            
+        <h2 id="rwd">Responsive Web Design</h2>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+            
+        <h2 id="htdapc">How to draw A Pie Chart</h2>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+            
 		</div>
 		<!-- END aboutThisPage-->
 		
@@ -169,13 +190,17 @@ Prepared technical materials for clients' reference, informed about the project 
 		<!-- BEGIN link list -->
 		<div class="sideList col-2 col-m-12">
 		   <ul class="sideList-ul">
-		       <li style="list-style-type: none; font-size: 26px; padding: 12px 10px;"><i style="font-size: 22px;" class="fa fa-link" aria-hidden="true"></i>&nbsp Useful Links:</li>
+		       <li style="list-style-type: none; font-size: 1.2em; padding: 12px 10px;"><i style="font-size: 22px;" class="fa fa-link" aria-hidden="true"></i>&nbsp Useful Links:</li>
 		       <li class="sideList-li"><a href="https://github.com/">Github</a></li>
 		       <li class="sideList-li"><a href="https://www.w3schools.com/">w3schools</a></li>
+               <li class="sideList-li"><a href="http://sidebar.io/">Sidebar</a></li>
+               <li class="sideList-li"><a href="https://beautifulpixels.com/">Beautifulpixels</a></li>
+               <li class="sideList-li"><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+               <li class="sideList-li"><a href="https://abookapart.com/">A Book Apart</a></li>
 		   </ul>
-		   <br><br><br><br><br><br><br><br>
+		   <br><br><br><br>
 		    <ul class="sideList-ul">
-		       <li style="list-style-type: none; font-size: 26px; padding: 12px 10px;"><i style="font-size: 22px;" class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp Contact Me:</li>
+		       <li style="list-style-type: none; font-size: 1.2em; padding: 12px 10px;"><i style="font-size: 22px;" class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp Contact Me:</li>
 		       <li class="sideList-li"><a href="mailto:mlle.qiu@outlook.com">mlle.qiu@outlook.com</a></li>
 		   </ul>
 		   
@@ -202,7 +227,7 @@ Prepared technical materials for clients' reference, informed about the project 
 	
 	
 	
-	
+
 
 	
 	
