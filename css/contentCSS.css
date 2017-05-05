@@ -74,7 +74,7 @@ div.pieLable {
 	/*background-color: red;*/
 }
 
-a.schoolLink, a.companyLink {
+a.content-link {
     color: #006699;
     text-decoration: none;
 }
