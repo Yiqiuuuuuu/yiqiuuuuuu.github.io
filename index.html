@@ -156,7 +156,7 @@
 		<div  id="aboutThisPage">
 		
 		<h1>About This Page</h1>
-		<h2 id="wgup">Why use Github User Page</h2>
+		<h2 id="wgup"><i class="fa fa-question-circle-o" aria-hidden="true"></i>&nbsp Why use Github User Page</h2>
         <br>
 		<p class="content-p">GitHub User Page is public webpage hosted for free through GitHub. GitHub users can create and host both personal website and websites related to specific GitHub projects.</p><br>
         <p class="content-p">I wanted a personal website, simple and reliable, just to present my resume and maybe some of my blog posts, and apparently no need to make a database or third-party plugins. In this case, I selected Github User Page which is really lightweight and easy <a class="content-link" href="https://pages.github.com/">to be built from my Github repository</a>.</p><br>
@@ -164,9 +164,184 @@
         <br>		
         <br>
             
-        <h2 id="dotp">Design of This Page</h2>
+        <h2 id="dotp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp Design of This Page</h2>
         <br>
-		<p>a</p>
+            <p class="content-p">In order to make my website automatically adjust its elements based on the size of different devices, I used <a class="content-link" href="https://www.w3schools.com/css/css_rwd_grid.asp">Grid-View</a> layout, where the page is divided into 12 columns, with all the widths of page elements sized by proportion, rather than pixels. The following image shows my web layout for a desktop view:</p><br>
+        
+        <div style="position:relative;">
+            <div style="position:absolute;opacity:0.9;width:auto;left:0;right:0;">
+                <div class="gridcontainer">
+                    <div class="gridwrapper" style="height:50px;">
+                        <div class="gridcontent" style="width:100%;background:#3973ac;border-right-color:transparent;">
+                            <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Fixed Header</p></div>
+                    </div>
+                    
+                    <div class="gridwrapper" style="height:180px;">
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;width:16.6%; padding-top:15px;">
+                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:10px;"></div>
+                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:10px;">
+                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Nav</p></div>
+                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:10px;">
+                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Bar</p></div>
+                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;"></div>
+                        </div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;width:16.6%;padding-top:15px;">
+                            <div style="background-color:#e6ccb3;border:none;width:100%;height:90%;">
+                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Side List</p></div>
+                        </div>
+                    </div>
+                    
+                    <div class="gridwrapper" style="height:40px; padding:0; margin:0;">
+                        <div class="gridcontent" style="width:100%;background:#3973ac;border-right-color:transparent;">
+                        <p style="text-align:center; font-size: 1em;">Footer</p></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gridcontainer" style="opacity:0.1;">
+                <div class="gridwrapper" style="height:270px;">
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;border-left:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                </div>
+            </div>
+            </div>
+            
+
+        <br>
+        <p class="content-p">With the use of CSS3 media queries, I set the layouts for tablet and smart phone respectively:</p><br>
+        
+        
+        <div style="position:relative;width:60%;display:inline-block; margin-right:50px;">
+            <div style="position:absolute;opacity:0.9;left:0;right:0;">
+                <div class="gridcontainer">
+                    <div class="gridwrapper" style="height:50px;">
+                        <div class="gridcontent" style="width:100%;background:#3973ac;border-right-color:transparent;">
+                            <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Fixed Header</p></div>
+                    </div>
+                    
+                    <div class="gridwrapper" style="height:140px;">
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;width:33.3%; padding-top:15px;">
+                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:10px;"></div>
+                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:10px;">
+                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Nav</p></div>
+                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:10px;">
+                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Bar</p></div>
+                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;"></div>
+                        </div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+                    </div>
+                    
+                    <div class="gridwrapper" style="height:45px; padding:0; margin:0;">
+                        <div class="gridcontent" style="width:100%;background:#e6ccb3;border-right-color:transparent;">
+                        <p style="text-align:center; font-size: 1em;">Side List</p></div>
+                    </div>
+                    
+                    <div class="gridwrapper" style="height:45px; padding:0; margin:0;">
+                        <div class="gridcontent" style="width:100%;background:#3973ac;border-right-color:transparent;">
+                        <p style="text-align:center; font-size: 1em;">Footer</p></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gridcontainer" style="opacity:0.1;">
+                <div class="gridwrapper" style="height:280px;">
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;border-left:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                </div>
+            </div>
+        </div>
+  
+        
+        <div style="position:relative;width:150px;display:inline-block;">
+            <div style="position:absolute;opacity:0.9;left:0;right:0;">
+                <div class="gridcontainer">
+                    <div class="gridwrapper" style="height:50px;">
+                        <div class="gridcontent" style="width:100%;background:#3973ac;border-right-color:transparent;">
+                            <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Fixed Header</p></div>
+                    </div>
+                    
+                    <div class="gridwrapper" style="height:140px;">
+                        <div class="gridcontent" style="background-color:#ffffff;border:none;width:100%;">
+                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:2px;"></div>
+                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:2px;">
+                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Nav</p></div>
+                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:2px;">
+                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Bar</p></div>
+                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;"></div>
+                        </div>
+
+                        
+                    </div>
+                    
+                    <div class="gridwrapper" style="height:45px; padding:0; margin:0;">
+                        <div class="gridcontent" style="width:100%;background:#e6ccb3;border-right-color:transparent;">
+                        <p style="text-align:center; font-size: 1em;">Side List</p></div>
+                    </div>
+                    
+                    <div class="gridwrapper" style="height:45px; padding:0; margin:0;">
+                        <div class="gridcontent" style="width:100%;background:#3973ac;border-right-color:transparent;">
+                        <p style="text-align:center; font-size: 1em;">Footer</p></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gridcontainer" style="opacity:0.1;">
+                <div class="gridwrapper" style="height:280px;">
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;border-left:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
+                </div>
+            </div>
+        </div>            
+
+            
+        <br>
+        <p class="content-p">Don't hesitate to resize the browser window to see how the content respond to the resizing.</p><br>
 
 
 		</div>
