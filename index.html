@@ -88,7 +88,8 @@
         <p class="content-p">I am a web developer. My favorite part about web programming is that it can seem like a very prescriptive, direct, binary kind of job, but there’s actually a lot of creativity and ingenuity involved.</p><br>
         <p class="content-p">I am an alumna of <a class="content-link" href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, graduating with a major in Electrical Engineering. Originally from Dalian, China, but now residing in Montreal, Canada.</p><br>
         <p class="content-p">I want to improve my programming skills and join an amazing team. Take some time to look at my credentials and this page which I designed recently. If you're interested in helping me make this happen, let's get in touch.</p>
-				
+
+<!-- I will design a pie chart here later on showing what I usually do and how much time I spend on each of the activities, using JavaScript and HTML5 canvas. -->
 <!--		<div class="pieChartArea">-->
 <!--		    <canvas id="pieChart" width="400px" height="400px">aaaaaaaaaaaa</canvas>-->
 <!--            <script type="text/javascript" src="js/homepage.js"></script>-->
@@ -168,12 +169,13 @@
         <br>
             <p class="content-p">In order to make my website automatically adjust its elements based on the size of different devices, I used <a class="content-link" href="https://www.w3schools.com/css/css_rwd_grid.asp">Grid-View</a> layout, where the page is divided into 12 columns, with all the widths of page elements sized by proportion, rather than pixels. The following image shows my web layout for a desktop view:</p><br>
         
+        <!-- BEGIN desktop view-->
         <div style="position:relative;">
             <div style="position:absolute;opacity:0.9;width:auto;left:0;right:0;">
                 <div class="gridcontainer">
                     <div class="gridwrapper" style="height:50px;">
                         <div class="gridcontent" style="width:100%;background:#3973ac;border-right-color:transparent;">
-                            <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Fixed Header</p></div>
+                            <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Header</p></div>
                     </div>
                     
                     <div class="gridwrapper" style="height:180px;">
@@ -224,12 +226,13 @@
                 </div>
             </div>
             </div>
+            <!-- END desktop view-->
             
 
         <br>
         <p class="content-p">With the use of CSS3 media queries, I set the layouts for tablet and smart phone respectively:</p><br>
         
-        
+        <!-- BEGIN tablet view-->
         <div style="position:relative;width:60%;display:inline-block; margin-right:50px;margin-bottom:20px;">
             <div style="position:absolute;opacity:0.9;left:0;right:0;">
                 <div class="gridcontainer">
@@ -286,8 +289,9 @@
                 </div>
             </div>
         </div>
+        <!-- END tablet view-->
   
-        
+        <!-- BEGIN smart phone view-->
         <div style="position:relative;width:150px;display:inline-block; margin-bottom:20px;">
             <div style="position:absolute;opacity:0.9;left:0;right:0;">
                 <div class="gridcontainer">
@@ -337,7 +341,8 @@
                     <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
                 </div>
             </div>
-        </div>            
+        </div>
+        <!-- END smart phone view-->
 
             
         <br>
