@@ -1,3 +1,4 @@
+
 h1 {
 	margin:0px; 
 	padding-top:15px;
@@ -55,13 +56,13 @@ div.pieChartArea {
 }
 
 
-canvas {
+/*canvas {
 	position:absolute;
 	direction: 1tr;
 	top: 0;
 	left:0;
 	background-color:yellow;
-}
+}*/
 
 
 div.pieLable {
@@ -78,6 +79,11 @@ a.content-link {
     color: #006699;
     text-decoration: none;
 }
+
+
+
+
+
 
 .gridwrapper {
     overflow: auto;
