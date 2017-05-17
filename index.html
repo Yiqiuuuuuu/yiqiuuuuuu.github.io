@@ -22,8 +22,27 @@
 		<!-- link to Font Awesome Icons -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
+		<!-- add AngularJS framework -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+        <!-- reference jQuery library -->
+        <script src="library/jquery-3.2.1.js"></script>
 		
-		
+        <script> 
+            $(document).ready(function(){
+                $("#iconA").click(function(){
+                    $(".subSideBar-liA").slideUp("slow");
+                });
+            });
+            
+            $(document).ready(function(){
+                $("#iconB").click(function(){
+                    $(".subSideBar-liB").slideUp("slow");
+                });
+            });
+            
+        </script>
+        
 
 	</head>
 	<!-- END head -->
@@ -38,7 +57,7 @@
 	   
 	
 	    <!-- BEGIN header -->
-	    <div class="header" id="pageTop">
+	    <div class="header-1 header-2" id="pageTop">
 	        
 	        <img class="profilePhoto" alt="Yiqiu's profile photo" src="pic/profilePhoto.JPG">
 	        
@@ -57,12 +76,14 @@
 		<!-- BEGIN vertical navigation bar -->
 		<div class="sideBar col-2 col-m-4">
     		<ul class="sideBar-ul">
-        		<li class="sideBar-li"><a onclick="showSubMenu()" href="#pageTop">About Me</a></li>
-        		         <li class="subSideBar-li"><a href="#whoIam">Who I Am</a></li>
-        		     	 <li class="subSideBar-li"><a href="#resume">Resume</a></li>
-        		<li class="sideBar-li"><a href="#aboutThisPage">About This Page</a></li>
-        		         <li class="subSideBar-li"><a href="#wgup">Why use Github User Page</a></li>
-                         <li class="subSideBar-li"><a href="#dotp">Design of This Page</a></li>
+        		<li class="sideBar-li"><a onclick="showSubMenu()" href="#pageTop">About Me
+                    <i id="iconA" class="fa fa-caret-square-o-down" aria-hidden="true"></i></a></li>
+        		         <li class="subSideBar-liA"><a href="#whoIam">Who I Am</a></li>
+        		     	 <li class="subSideBar-liA"><a href="#resume">Resume</a></li>
+        		<li class="sideBar-li"><a href="#aboutThisPage">About This Page
+                    <i id="iconB" class="fa fa-caret-square-o-down" aria-hidden="true"></i></a></li>
+        		         <li class="subSideBar-liB"><a href="#wgup">Why use Github User Page</a></li>
+                         <li class="subSideBar-liB"><a href="#dotp">Design of This Page</a></li>
     		</ul>
 		</div>
 		<!-- END vertical navigation bar -->
@@ -102,11 +123,30 @@
 		<b class="content-b">Address: Montreal, QC CANADA</b><br><br>
 		<p class="content-p">A programmer engaged in web development and user interface design. Keen to work on new and existing micro-sites, landing pages, and templates and provide guidance and troubleshooting support to clients. Currently looking for a new position. </p><br>
 		
-		<b class="content-b">Degrees</b>
-		<ul class="content-ul">
-            <li class="content-li">Master of Applied Science in Electrical Engineering<br><a class="content-link" href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, Montreal, QC Canada<br>Jan.2013-October.2015</li>
-            <li class="content-li">Bachelor of Science in Electrical Engineering<br><a class="content-link" href="http://en.dlut.edu.cn/">Dalian University of Technology</a>, Dalian, LN China<br>Sep.2008-Jun.2012</li>
-		</ul><br>
+            
+        <b class="content-b">Skills</b><br>
+        <p class="content-p">Markup/Programming Languages:</p>
+        <ul class="content-ul">
+            <li class="content-li">Front-end:</li>
+                <ul class="content-ul">
+                   <li class="content-li">XTHML and HTML5</li>
+                   <li class="content-li">CSS and CSS3</li>
+                   <li class="content-li">JavaScript, JSON, AJAX, jQuery</li>
+                </ul>
+            <li class="content-li">Server-side(basic knowledge):</li>
+                <ul class="content-ul">
+                   <li class="content-li">Java, PHP</li>
+                   <li class="content-li">MySQL</li>
+                </ul>
+        </ul><br>           
+        <p class="content-p">Tools/IDEs:</p>
+        <ul class="content-ul">
+            <li class="content-li">Brackets, Eclipse </li>
+            <li class="content-li">SVN and Git</li>
+        </ul><br>
+        
+        <p class="content-p">Enviroments:&nbsp Windows, Linux</p>    
+        <br>
 		
 		<b class="content-b">Professional Employment</b><br>
         <p class="content-p">Junior Software Engineer &nbsp &nbsp Apr.2016-Feb.2017</p>
@@ -121,31 +161,14 @@
             <li class="content-li">Designed  the user interface of the customized industrial Intelligence Manufacturing (IM) System using HTML, CSS, JavaScript and JSON.</li> 
             <li class="content-li">Prepared technical materials for clients' reference, guided clients in incorporating the product in their work set up.</li>
         </ul><br>
-		
-		<b class="content-b">Skills</b><br>
-        <p class="content-p">Markup Languages/ Programming Languages/ Library/ Framework:</p>
-        <ul class="content-ul">
-            <li class="content-li">Front-end:</li>
-                <ul class="content-ul">
-                   <li class="content-li">XTHML and HTML5</li>
-                   <li class="content-li">CSS and CSS3</li>
-                   <li class="content-li">JavaScript, JSON, AJAX, jQuery, AngularJS</li>
-                </ul>
-            <li class="content-li">Server-side:</li>
-                <ul class="content-ul">
-                   <li class="content-li">Java, PHP</li>
-                   <li class="content-li">SQL(MySQLi extension)</li>
-                </ul>
-        </ul><br>
-            
-        <p class="content-p">Tools/IDEs:</p>
-        <ul class="content-ul">
-            <li class="content-li">Brackets, Sublime Text, Eclipse </li>
-            <li class="content-li">SVN and Git</li>
-        </ul><br>
         
-        <p class="content-p">Enviroments:&nbsp Windows, Linux</p>
-            
+          
+		<b class="content-b">Degrees</b>
+		<ul class="content-ul">
+            <li class="content-li">Master of Applied Science in Electrical Engineering<br><a class="content-link" href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, Montreal, QC Canada<br>Jan.2013-October.2015</li>
+            <li class="content-li">Bachelor of Science in Electrical Engineering<br><a class="content-link" href="http://en.dlut.edu.cn/">Dalian University of Technology</a>, Dalian, LN China<br>Sep.2008-Jun.2012</li>
+		</ul><br>
+        
 		<br>
 		</div>
 		<!-- END aboutMe -->
@@ -386,7 +409,7 @@
 		
 		
 	  </div>
-	  <!-- END .row -->
+	<!--   END .row -->
 		
 		
 		
