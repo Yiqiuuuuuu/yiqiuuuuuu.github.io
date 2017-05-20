@@ -1,24 +1,19 @@
 <!DOCTYPE html>
-<html>
-
-
-
-    <!-- BEGIN head -->
+<html lang="en">
 	<head>
-		<title>Yiqiu's Github User Page</title>
-		
-		<meta name="keywords" content="Yiqiu's Github User Page, Github User Page Example">  
-		<meta name="description" content="This Github User Page was developed by Yiqiu who is a web developer.">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <meta name="keywords" content=" Yiqiu's Personal Website, Yiqiu's Github User Page">  
+		<meta name="description" content="This website was developed by Yiqiu who is a web developer.">
 		<meta name="author" content="Yiqiu">
 		
 		<!-- take control over the viewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="css/fixedCSS.css">
-		<link rel="stylesheet" type="text/css" href="css/contentCSS.css">
-		
-		
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+				
 		<!-- link to Font Awesome Icons -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
@@ -26,417 +21,164 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
         <!-- reference jQuery library -->
-        <script src="library/jquery-3.2.1.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		
-        <script> 
-            $(document).ready(function(){
-                $("#iconA").click(function(){
-                    $(".subSideBar-liA").slideUp("slow");
-                });
-            });
-            
-            $(document).ready(function(){
-                $("#iconB").click(function(){
-                    $(".subSideBar-liB").slideUp("slow");
-                });
-            });
-            
-        </script>
+        <title>Yiqiu's Personal Website</title>
+		
         
-
+		<script src="js/modernizr.custom.js"></script>
 	</head>
-	<!-- END head -->
-	
-	
-	
-	
-	<!-- BEGIN body -->
+    
+    
 	<body>
-	   
-	    <script type="text/javascript" src="js/SideBarJS.js"></script>
-	   
-	
-	    <!-- BEGIN header -->
-	    <div class="header-1 header-2" id="pageTop">
-	        
-	        <img class="profilePhoto" alt="Yiqiu's profile photo" src="pic/profilePhoto.JPG">
-	        
-	        <a class="topPageName-small topPageName-large" href="https://yiqiuuuuuu.github.io/"><b>Yiqiu's Github User Page</b></a>
-	    	
-	    </div>
-	    <!-- END header -->
-
-	   
-	    
-	    
-	 <!-- BEGIN .row -->
-	 <div class="row">
-
-	  
-		<!-- BEGIN vertical navigation bar -->
-		<div class="sideBar col-2 col-m-4">
-    		<ul class="sideBar-ul">
-        		<li class="sideBar-li"><a onclick="showSubMenu()" href="#pageTop">About Me
-                    <i id="iconA" class="fa fa-caret-square-o-down" aria-hidden="true"></i></a></li>
-        		         <li class="subSideBar-liA"><a href="#whoIam">Who I Am</a></li>
-        		     	 <li class="subSideBar-liA"><a href="#resume">Resume</a></li>
-        		<li class="sideBar-li"><a href="#aboutThisPage">About This Page
-                    <i id="iconB" class="fa fa-caret-square-o-down" aria-hidden="true"></i></a></li>
-        		         <li class="subSideBar-liB"><a href="#wgup">Why use Github User Page</a></li>
-                         <li class="subSideBar-liB"><a href="#dotp">Design of This Page</a></li>
-    		</ul>
-		</div>
-		<!-- END vertical navigation bar -->
-		
-		
-		
-		
-		
-		
-		
-		
-		<!-- BEGIN content page -->
-		<div class="content col-8 col-m-8">
-		
-		
-		
-		<!-- BEGIN aboutMe -->
-		<div>
-		
-		<h1>About Me</h1>
-        <h2 id="whoIam"><i class="fa fa-meh-o" aria-hidden="true"></i> &nbsp Who I Am</h2>
-		<br>
-        <p class="content-p">I am a web developer. My favorite part about web programming is that it can seem like a very prescriptive, direct, binary kind of job, but there’s actually a lot of creativity and ingenuity involved.</p><br>
-        <p class="content-p">I am an alumna of <a class="content-link" href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, graduating with a major in Electrical Engineering. Originally from Dalian, China, but now residing in Montreal, Canada.</p><br>
-        <p class="content-p">I want to improve my programming skills and join an amazing team. Take some time to look at my credentials and this page which I designed recently. If you're interested in helping me make this happen, let's get in touch.</p>
-
-<!-- I will design a pie chart here later on showing what I usually do and how much time I spend on each of the activities, using JavaScript and HTML5 canvas. -->
-<!--		<div class="pieChartArea">-->
-<!--		    <canvas id="pieChart" width="400px" height="400px">aaaaaaaaaaaa</canvas>-->
-<!--            <script type="text/javascript" src="js/homepage.js"></script>-->
-<!--        </div>-->
-		
-		<br><br>
-		<h2 id="resume"><i class="fa fa-file-text-o" aria-hidden="true"></i> &nbsp Resume</h2><br>
-		<b class="content-b">Yiqiu Wang</b><br>
-		<b class="content-b">Email: mlle.qiu@outlook.com</b><br>
-		<b class="content-b">Address: Montreal, QC CANADA</b><br><br>
-		<p class="content-p">A programmer engaged in web development and user interface design. Keen to work on new and existing micro-sites, landing pages, and templates and provide guidance and troubleshooting support to clients. Currently looking for a new position. </p><br>
-		
-            
-        <b class="content-b">Skills</b><br>
-        <p class="content-p">Markup/Programming Languages:</p>
-        <ul class="content-ul">
-            <li class="content-li">Front-end:</li>
-                <ul class="content-ul">
-                   <li class="content-li">XTHML and HTML5</li>
-                   <li class="content-li">CSS and CSS3</li>
-                   <li class="content-li">JavaScript, JSON, AJAX, jQuery</li>
-                </ul>
-            <li class="content-li">Server-side(basic knowledge):</li>
-                <ul class="content-ul">
-                   <li class="content-li">Java, PHP</li>
-                   <li class="content-li">MySQL</li>
-                </ul>
-        </ul><br>           
-        <p class="content-p">Tools/IDEs:</p>
-        <ul class="content-ul">
-            <li class="content-li">Brackets, Eclipse </li>
-            <li class="content-li">SVN and Git</li>
-        </ul><br>
-        
-        <p class="content-p">Enviroments:&nbsp Windows, Linux</p>    
-        <br>
-		
-		<b class="content-b">Professional Employment</b><br>
-        <p class="content-p">Junior Software Engineer &nbsp &nbsp Apr.2016-Feb.2017</p>
-        <p class="content-p"><a class="content-link" href="http://www.dhc.com.cn/en/index.action">Dalian Hi-Think Computer Technology, Corp.</a>, an IT company provides leading application software products, information service and industrial solutions for global customers.</p> 
-
-        <ul class="content-ul">
-            <li class="content-li">Consulted with clients, identified their requirements, maintained and developed cordial relationship with them.</li>
-            <li class="content-li">Provided serial-to-ethernet solution for industrial serial machines using 
-            <a class="content-link" href="https://en.wikipedia.org/wiki/Network_switch">Network Switch</a> and 
-            <a class="content-link" href="http://www.moxa.com/product/NPort_5110.htm">Serial Device Servers</a>.</li>
-            <li class="content-li">Decoded private communication protocols of clients' mechanical machines using Java.</li>
-            <li class="content-li">Designed  the user interface of the customized industrial Intelligence Manufacturing (IM) System using HTML, CSS, JavaScript and JSON.</li> 
-            <li class="content-li">Prepared technical materials for clients' reference, guided clients in incorporating the product in their work set up.</li>
-        </ul><br>
-        
-          
-		<b class="content-b">Degrees</b>
-		<ul class="content-ul">
-            <li class="content-li">Master of Applied Science in Electrical Engineering<br><a class="content-link" href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, Montreal, QC Canada<br>Jan.2013-October.2015</li>
-            <li class="content-li">Bachelor of Science in Electrical Engineering<br><a class="content-link" href="http://en.dlut.edu.cn/">Dalian University of Technology</a>, Dalian, LN China<br>Sep.2008-Jun.2012</li>
-		</ul><br>
-        
-		<br>
-		</div>
-		<!-- END aboutMe -->
-		
-		
-		
-		<!-- BEGIN aboutThisPage -->
-		<div  id="aboutThisPage">
-		
-		<h1>About This Page</h1>
-		<h2 id="wgup"><i class="fa fa-question-circle-o" aria-hidden="true"></i>&nbsp Why use Github User Page</h2>
-        <br>
-		<p class="content-p">GitHub User Page is public webpage hosted for free through GitHub. GitHub users can create and host both personal website and websites related to specific GitHub projects.</p><br>
-        <p class="content-p">I wanted a personal website, simple and reliable, just to present my resume and maybe some of my blog posts, and apparently no need to make a database or third-party plugins. In this case, I selected Github User Page which is really lightweight and easy <a class="content-link" href="https://pages.github.com/">to be built from my Github repository</a>.</p><br>
-        <p class="content-p">I built this site from scratch, still trying to improve it in its layout and content. Welcome to visit my <a class="content-link" href="https://github.com/Yiqiuuuuuu/yiqiuuuuuu.github.io"> Github repository</a> and pull request!</p>
-        <br>		
-        <br>
-            
-        <h2 id="dotp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp Design of This Page</h2>
-        <br>
-            <p class="content-p">In order to make my website automatically adjust its elements based on the size of different devices, I used <a class="content-link" href="https://www.w3schools.com/css/css_rwd_grid.asp">Grid-View</a> layout, where the page is divided into 12 columns, with all the widths of page elements sized by proportion, rather than pixels. The following image shows my web layout for a desktop view:</p><br>
-        
-        <!-- BEGIN desktop view-->
-        <div style="position:relative;">
-            <div style="position:absolute;opacity:0.9;width:auto;left:0;right:0;">
-                <div class="gridcontainer">
-                    <div class="gridwrapper" style="height:50px;">
-                        <div class="gridcontent" style="width:100%;background:#3973ac;border-right-color:transparent;">
-                            <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Header</p></div>
-                    </div>
-                    
-                    <div class="gridwrapper" style="height:180px;">
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;width:16.6%; padding-top:15px;">
-                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:10px;"></div>
-                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:10px;">
-                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Nav</p></div>
-                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:10px;">
-                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Bar</p></div>
-                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;"></div>
-                        </div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
+		<div class="container">	
+			<div id="main" class="main">
+				<section>
+					<div class="box">
+						<h2><i class="fa fa-meh-o" aria-hidden="true"></i><br>About</h2>
+					</div>
+					<div class="content">
+                        <h2>About Me</h2>
+                        <img class="img-profile" src="images/profile.jpg">
                         
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;width:16.6%;padding-top:15px;">
-                            <div style="background-color:#e6ccb3;border:none;width:100%;height:90%;">
-                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Side List</p></div>
-                        </div>
-                    </div>
-                    
-                    <div class="gridwrapper" style="height:40px; padding:0; margin:0;">
-                        <div class="gridcontent" style="width:100%;background:#3973ac;border-right-color:transparent;">
-                        <p style="text-align:center; font-size: 1em;">Footer</p></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="gridcontainer" style="opacity:0.1;">
-                <div class="gridwrapper" style="height:270px;">
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;border-left:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                </div>
-            </div>
-            </div>
-            <!-- END desktop view-->
-            
-
-        <br>
-        <p class="content-p">With the use of CSS3 media queries, I set the layouts for tablet and smart phone respectively:</p><br>
-        
-        <!-- BEGIN tablet view-->
-        <div style="position:relative;width:60%;display:inline-block; margin-right:50px;margin-bottom:20px;">
-            <div style="position:absolute;opacity:0.9;left:0;right:0;">
-                <div class="gridcontainer">
-                    <div class="gridwrapper" style="height:50px;">
-                        <div class="gridcontent" style="width:100%;background:#3973ac;border-right-color:transparent;">
-                            <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Header</p></div>
-                    </div>
-                    
-                    <div class="gridwrapper" style="height:140px;">
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;width:33.3%; padding-top:15px;">
-                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:10px;"></div>
-                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:10px;">
-                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Nav</p></div>
-                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:10px;">
-                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Bar</p></div>
-                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;"></div>
-                        </div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;"></div>
-                    </div>
-                    
-                    <div class="gridwrapper" style="height:45px; padding:0; margin:0;">
-                        <div class="gridcontent" style="width:100%;background:#e6ccb3;border-right-color:transparent;">
-                        <p style="text-align:center; font-size: 1em;">Side List</p></div>
-                    </div>
-                    
-                    <div class="gridwrapper" style="height:45px; padding:0; margin:0;">
-                        <div class="gridcontent" style="width:100%;background:#3973ac;border-right-color:transparent;">
-                        <p style="text-align:center; font-size: 1em;">Footer</p></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="gridcontainer" style="opacity:0.1;">
-                <div class="gridwrapper" style="height:280px;">
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;border-left:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                </div>
-            </div>
-        </div>
-        <!-- END tablet view-->
-  
-        <!-- BEGIN smart phone view-->
-        <div style="position:relative;width:150px;display:inline-block; margin-bottom:20px;">
-            <div style="position:absolute;opacity:0.9;left:0;right:0;">
-                <div class="gridcontainer">
-                    <div class="gridwrapper" style="height:50px;">
-                        <div class="gridcontent" style="width:100%;background:#3973ac;border-right-color:transparent;">
-                            <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Header</p></div>
-                    </div>
-                    
-                    <div class="gridwrapper" style="height:140px;">
-                        <div class="gridcontent" style="background-color:#ffffff;border:none;width:100%;">
-                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:2px;"></div>
-                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:2px;">
-                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Nav</p></div>
-                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;margin-bottom:2px;">
-                                <p style="text-align:center; font-size: 1em; padding:0; margin:0;">Bar</p></div>
-                            <div style="background-color:#d9b38c;border:none;width:100%;height:15%;"></div>
-                        </div>
-
+                        <p  class="p-about">I am a web developer. My favorite part about web programming is that it can seem like a very prescriptive, direct, binary kind of job, but there’s actually a lot of creativity and ingenuity involved.</p>
+                            
+                        <p  class="p-about">I am an alumna of <a href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, graduating with a major in Electrical Engineering. Originally from Dalian, China, but now residing in Montreal, Canada.</p>
                         
-                    </div>
+                        <p  class="p-about">I want to improve my programming skills and join an amazing team. Take some time to look at my credentials and this page which I designed recently. If you're interested in helping me make this happen, let's get in touch.</p>
+					</div>
                     
-                    <div class="gridwrapper" style="height:45px; padding:0; margin:0;">
-                        <div class="gridcontent" style="width:100%;background:#e6ccb3;border-right-color:transparent;">
-                        <p style="text-align:center; font-size: 1em;">Side List</p></div>
-                    </div>
-                    
-                    <div class="gridwrapper" style="height:45px; padding:0; margin:0;">
-                        <div class="gridcontent" style="width:100%;background:#3973ac;border-right-color:transparent;">
-                        <p style="text-align:center; font-size: 1em;">Footer</p></div>
-                    </div>
-                </div>
+					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+				</section>
+                
+				<section>
+					<div class="box">
+						<h2><i class="fa fa-pencil-square-o" aria-hidden="true"></i><br>Projects</h2>
+					</div>
+					<div class="content">
+						<h2>My Projects</h2><br><br>
+                        <ul class="ul-project">
+                            <li>
+                                <img class="img-project" src="images/project1.jpg" />
+                                <b>Design of my personal website</b>
+                                <p>Techniques used: HTML5,CSS3,JavaScript,jQuery,Media Queries,Responsive Web Layout...<br>Source Code Link: <a href="https://github.com/Yiqiuuuuuu/yiqiuuuuuu.github.io">Github Repository - yiqiuuuuuu.github.io</a></p>
+                            
+                            </li><br>
+                            <li>
+                                <img class="img-project" src="images/project2.png" />
+                                <b>Design of a website for a Milk-Tea Store</b>
+                                <p>Techniques used: PHP,AJAX,JSON,MySQL...<br>Source Code Link: <a href="https://github.com/Yiqiuuuuuu/yiqiuuuuuu.github.io">Github Repository - MilkTea</a></p>
+                            
+                            </li>
+                        
+                        </ul>
+                        
+							
+					</div>
+					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+				</section>
+                
+				<section>
+					<div class="box">
+						<h2><i class="fa fa-file-text-o" aria-hidden="true"></i><br>Resume</h2>
+					</div>
+					<div class="content">
+                        <h2>My Resume</h2>
+                        
+						<b>Yiqiu Wang</b><br>
+                        <b>Email: <a href="mailto:mlle.qiu@outlook.com">mlle.qiu@outlook.com</a></b><br>
+                        <b>Address: Montreal, QC CANADA</b><br>
+                        
+                        <p>A programmer engaged in web development and user interface design. Keen to work on new and existing micro-sites, landing pages, and templates and provide guidance and troubleshooting support to clients. Currently looking for a new position. </p><br>
+                        
+                        <b><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp Skills</b>
+                        <p class="p-resume">Markup Languages/ Programming Languages/ Framework/ Library:</p>
+                        <ul class="ul-resume">
+                            <li>Front-end: 
+                                <div class="drop" style="background-color: #fdb933;">XTHML and HTML5</div>, <div class="drop" style="background-color: #fdb933;">CSS and CSS3</div>, <div class="drop" style="background-color: #fdb933;">JavaScript</div>, <div class="drop" style="background-color: #fdb933;">JSON</div>, <div class="drop" style="background-color: #fdb933;">AJAX</div>, <div class="drop" style="background-color: #fdb933;">jQuery</div>, <div class="drop" style="background-color: #fdb933;">AngularJS</div></li>
+                            
+                            <li>Server-side(basic knowledge): <div class="drop" style="background-color: #f47a55;">Java</div>, <div class="drop" style="background-color: #f47a55;">PHP</div>, <div class="drop" style="background-color: #f47a55">MySQL</div></li>
+                        </ul><br>
+                        
+                        <p class="p-resume">Tools/IDEs:</p>
+                        <ul class="ul-resume">
+                            <li><div class="drop" style="background-color: #f47a55;">Brackets, Eclipse</div></li>
+                            <li><div class="drop" style="background-color: #fdb933;">SVN and Git</div></li>
+                        </ul><br>
+                        
+                        <p class="p-resume">Enviroments:</p>
+                        <ul class="ul-resume">
+                            <li>Windows</li>
+                            <li>Linux</li>
+                        </ul>
+                        
+                        <br><br>
+                        <b><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp Professional Employment</b><br>
+                        
+                        <p class="p-resume">Junior Software Engineer &nbsp &nbsp Apr.2016-Feb.2017</p>
+                        <p class="p-resume"><a href="http://www.dhc.com.cn/en/index.action">Dalian Hi-Think Computer Technology, Corp.</a>, an IT company provides leading application software products, information service and industrial solutions for global customers.</p> 
+                        
+                        <ul class="ul-resume">
+                            <li>Consulted with clients, identified their requirements, maintained and developed cordial relationship with them.</li>
+                            <li>Provided serial-to-ethernet solution for industrial serial machines using <a class="content-link" href="https://en.wikipedia.org/wiki/Network_switch">Network Switch</a> and <a class="content-link" href="http://www.moxa.com/product/NPort_5110.htm">Serial Device Servers</a>.</li>
+                            <li>Decoded private communication protocols of clients' mechanical machines using Java.</li>
+                            <li>Designed  the user interface of the customized industrial Intelligence Manufacturing (IM) System using HTML, CSS, JavaScript and JSON.</li>
+                            <li>Prepared technical materials for clients' reference, guided clients in incorporating the product in their work set up.</li>
+                        </ul><br><br>
+                        
+                        <b><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp Degrees</b>
+                        <ul class="ul-resume">
+                            <li>Master of Applied Science in Electrical Engineering<br><a class="content-link" href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, Montreal, QC Canada<br>Jan.2013-October.2015</li>
+                            <li>Bachelor of Science in Electrical Engineering<br><a class="content-link" href="http://en.dlut.edu.cn/">Dalian University of Technology</a>, Dalian, LN China<br>Sep.2008-Jun.2012</li>
+                        </ul>
+                        <br><br>
+                        
+                       
+					</div>
+					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+				</section>
+                
+				<section>
+					<div class="box">
+						<h2><i class="fa fa-envelope-o" aria-hidden="true"></i><br>Contact</h2>
+					</div>
+					<div class="content">
+						<h2>Get In Touch</h2>
+                        <div class="div-form">
+                            <form action="https://formspree.io/mlle.qiu@outlook.com" method="POST">
+                                <label for="fn">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                                
+                                <label for="ln">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                
+                                <label for="email">Email Address</label>
+                                <input type="text" id="email" name="email" placeholder="Your email address..">
+                                
+                                <label for="message">Message</label>
+                                <textarea name="message"></textarea>
+
+                                <input type="submit" value="Send Message">
+                            </form>
+                        </div>
+					</div>
+					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+				</section>
             </div>
-            
-            <div class="gridcontainer" style="opacity:0.1;">
-                <div class="gridwrapper" style="height:280px;">
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;border-left:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                    <div class="gridcontent" style="background-color:#ffffff;border-right:1px solid #000000;"></div>
-                </div>
-            </div>
+		</div><!-- /container -->
+		
+		<script src="js/boxlayout.js"></script>
+		<script>
+			$(function() {
+				Boxlayout.init();
+			});
+		</script>
+        
+        
+		<div style="text-align:center;clear:both;">
+            <p style="color:black"><i class="fa fa-copyright" aria-hidden="true"></i>Yiqiu 2017</p>
         </div>
-        <!-- END smart phone view-->
-
-            
-        <br>
-        <p class="content-p">Don't hesitate to resize the browser window to see how the content respond to the resizing.</p><br>
-
-
-		</div>
-		<!-- END aboutThisPage-->
-		
-		
-		
-			
-		</div>
-		<!-- END content page -->
-		
-		
-		
-		
-		
-		
-		
-
-		<!-- BEGIN link list -->
-		<div class="sideList col-2 col-m-12">
-		   <ul class="sideList-ul">
-		       <li style="list-style-type: none; font-size: 1.2em; padding: 12px 10px;"><i style="font-size: 22px;" class="fa fa-link" aria-hidden="true"></i>&nbsp Useful Links:</li>
-		       <li class="sideList-li"><a href="https://github.com/">Github</a></li>
-		       <li class="sideList-li"><a href="https://www.w3schools.com/">w3schools</a></li>
-               <li class="sideList-li"><a href="http://sidebar.io/">Sidebar</a></li>
-               <li class="sideList-li"><a href="https://beautifulpixels.com/">Beautifulpixels</a></li>
-               <li class="sideList-li"><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-               <li class="sideList-li"><a href="https://abookapart.com/">A Book Apart</a></li>
-		   </ul>
-		   <br><br><br><br>
-		    <ul class="sideList-ul">
-		       <li style="list-style-type: none; font-size: 1.2em; padding: 12px 10px;"><i style="font-size: 22px;" class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp Contact Me:</li>
-		       <li class="sideList-li"><a href="mailto:mlle.qiu@outlook.com">mlle.qiu@outlook.com</a></li>
-		   </ul>
-		   
-		</div>
-		<!-- END link list -->
-		
-		
-	  </div>
-	<!--   END .row -->
-		
-		
-		
-		
-			
-		
-		
-		<!-- BEGIN footer -->
-		<footer>
-    		<p> © Yiqiu 2017</p>
-		</footer>
-	    <!-- END footer -->
-	    
-	
-	
-	
-	
-
-
-	
-	
-	
-	
-	
-	
-	    
-    </body>   
-	<!-- END body -->
-	
+        
+        
+	</body>
 </html>
