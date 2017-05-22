@@ -14,7 +14,7 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 }
 
 body {
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family:  "Trebuchet MS", Helvetica, sans-serif;
 /*    color: rgb(227,230,195);*/
     color:white;
     background: white;
@@ -23,8 +23,8 @@ body {
 }
 
 a {
-	color: white;
     text-decoration: none;
+    color:inherit;
 }
 
 a:hover {
@@ -159,23 +159,25 @@ a:hover {
 
 
 .p-about {
-    width: 70%;
-    margin-top: 40px;
+    position: absolute;
+    top:205px;
+    left:20px;
+    margin: auto;
+    width: 1255px;
+    color:black;
+    margin: auto;
 }
 
 
 .img-profile {
-    width: 25%;
-    float: right;
-    margin:17px;
-    opacity: 0.9;
     border-radius: 10px;
+    position:absolute;
+    top:0;
+    left:0;
 }
 
-.img-profile:hover {
-    opacity: 1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
+
 
 label {
     font-size: 1em;
