@@ -1,425 +1,184 @@
-body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
-
-*,
-*:after,
-*:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.content b {
-    font-size: 1.7em;
-    line-height: 1.5;
-}
-
-body {
-    font-family:  "Trebuchet MS", Helvetica, sans-serif;
-/*    color: rgb(227,230,195);*/
-    color:white;
-    background: white;
-    font-size: 0.9em;
-    font-weight: 300;
-}
-
-a {
-    text-decoration: none;
-    color:inherit;
-}
-
-a:hover {
-	text-shadow: 2px 2px 5px #d3d7d4;
-}
-
-.container { height: 100%; }
-
-.main {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-}
-
-.main > section {
-	position: absolute;
-	width: 50%;
-	height: 50%;
-}
-
-.main > section:first-child {
-	top: 0;
-	left: 0;
-	background: #50b7c1;
-}
-
-.main > section:nth-child(2) {
-	top: 0;
-	left: 50%;
-	background: #00a6ac;
-}
-
-.main > section:nth-child(3) {
-	top: 50%;
-	left: 0;
-	background: #008792;
-}
-
-.main > section:nth-child(4) {
-	top: 50%;
-	left: 50%;
-	background: #78cdd1;
-}
-
-.box {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	cursor: pointer;
-	opacity: 1;
-	/* Centering with flexbox */
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.box h2 {
-    font-family: "Times New Roman", Times, serif;
-	text-align: center;
-	margin: 0;
-	padding: 20px;
-	width: 100%;
-	font-size: 1.8em;
-/*	letter-spacing: 2px;*/
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.main > section .icon-close {
-	position: absolute;
-	top: 10px;
-	right: 24px;
-	cursor: pointer;
-	z-index: 100;
-	opacity: 0;
-	pointer-events: none;
-    font-size: 35px;
-}
-.main > section .icon-close:hover {
-    font-size: 40px;
-}
-
-
-.content {
-	opacity: 0;
-	pointer-events: none;
-	position: absolute;
-	top: 60px;
-	left: 30px;
-	right: 30px;
-	bottom: 30px;
-	padding: 0 20px;
-	overflow: hidden;
-	overflow-y: auto;
-}
-
-
-.content p {
-/*	margin: 0 auto;*/
-	padding-bottom: 15px;
-	font-size: 1.7em;
-	line-height: 1.5;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.content h2 {
-	font-size: 3em;
-	font-weight: 300;
-	margin: 0 0 20px 0;
-}
-
-
-
-.p-about {
-    position: absolute;
-    top:205px;
-    left:20px;
-    margin: auto;
-    width: 1255px;
-    color:black;
-    margin: auto;
-}
-
-
-.img-profile {
-    border-radius: 10px;
-    position:absolute;
-    top:0;
-    left:0;
-}
-
-
-
-
-label {
-    font-size: 1em;
-    font-weight: 300;
-    color: black;
-}
-
-input[type=text], textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-textarea {
-    height: 150px;
-}
-
-input[type=submit] {
-    width: 100%;
-    background-color:  #dddddd;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.1em;
-    font-weight: 300;
-    color: black;
-}
-
-input[type=submit]:hover {
-    background-color:  #bfbfbf;
-}
-
-textarea:focus, input:focus{
-    outline: none;
-}
-
-.div-form {
-    border-radius: 5px;
-    background-color: white;
-    padding: 20px;
-    width: 60%;
-    margin:auto;
-}
-
-p.p-resume {
-    padding-left: 30px;
-    padding-bottom: 0;
-	font-size: 1.5em;
-	line-height: 1.5;
-    margin:5px;
-}
-/*
-p.p-project {
-    display:inline-block;
-    padding-left: 30px;
-    padding-bottom: 0;
-	font-size: 1.5em;
-	line-height: 1.5;
-    margin:5px;
-}
-*/
-
-ul.ul-resume {
-    margin:0;
-    padding-left: 60px;
-    font-size: 1.3em;
-	line-height: 1.6;
-}
-
-ul.ul-project {
-    list-style-type: none;  
-    width: 100%;
-    padding-left: 0;
-}
-
-.img-project {
-    width: 200px;
-    float: left;
-    border-radius: 10px;
-    margin: 0 15px 0 0; 
-}
-
-
-
-
-
-
-
-
-
-
-/* Transition classes and properties */
-/* Separated for a better overview and control */
-
-.main > section {
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-
-.main > section.expand {
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-}
-
-.main > section.expand-top {
-	z-index: 100;
-}
-
-.main > section:first-child.expand {
-	background: #50b7c1;
-}
-.main > section:nth-child(2).expand {
-	background: #00a6ac;
-}
-.main > section:nth-child(3).expand {
-	background: #008792;
-}
-.main > section:nth-child(4).expand {
-	background: #78cdd1;
-}
-
-.main.expand-item > section:not(.expand) {
-	-webkit-transform: scale(0.5);
-	-moz-transform: scale(0.5);
-	-ms-transform: scale(0.5);
-	transform: scale(0.5);
-	opacity: 0;
-}
-
-.box {
-	-webkit-transition: opacity 0.2s linear 0.5s;
-	-moz-transition: opacity 0.2s linear 0.5s;
-	transition: opacity 0.2s linear 0.5s;
-}
-
-section.expand .box {
-	opacity: 0;
-	-webkit-transition: opacity 0s linear;
-	-moz-transition: opacity 0s linear;
-	transition: opacity 0s linear;
-}
-
-.box h2 {
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-
-.no-touch section:not(.expand) .box:hover h2 {
-	-webkit-transform: translateY(-15px);
-	-moz-transform: translateY(-15px);
-	-ms-transform: translateY(-15px);
-	transform: translateY(-15px);
-}
-
-.content,
-.icon-close {
-	-webkit-transition: opacity 0.1s linear 0s;
-	-moz-transition: opacity 0.1s linear 0s;
-	transition: opacity 0.1s linear 0s;
-}
-
-section.expand .content,
-section.expand .icon-close {
-	pointer-events: auto;
-	opacity: 1;
-	-webkit-transition: opacity 0.3s linear 0.5s;
-	-moz-transition: opacity 0.3s linear 0.5s;
-	transition: opacity 0.3s linear 0.5s;
-}
-
-div.drop {
-    padding-bottom: 1px;
-    padding-top: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 10px;
-    display:inline-block;
-    border-radius: 4px;
-    -moz-transition: transform 0.2s; 
-    -ms-transition: transform 0.2s; 
-    -webkit-transition: transform 0.2s; 
-    transition: transform 0.2s ease;  
-}
-
-div.drop:hover {
-    -moz-transform: translateY(20px); 
-    -ms-transform: translateY(20px); 
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 46.5em) {
-	.content,
-	.box {
-		font-size: 75%;
-	}
-
-	.expand .box {
-		height: 130px;
-	}
-
-/*
-	.content > ul li {
-		width: 40%;
-	}
-*/
-    .p-about {
-        width: 100%;
-    }
-    .img-profile {
-        width:85%;
-        float:none;
-        margin:auto;
-        display: block;
-    }
-    .div-form {
-        width:100%;
-    }
-
-}
-
-
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <meta name="keywords" content=" Yiqiu's Personal Website, Yiqiu's Github User Page">  
+		<meta name="description" content="This website was developed by Yiqiu who is a web developer.">
+		<meta name="author" content="Yiqiu">
+		
+		<!-- take control over the viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+				
+		<!-- link to Font Awesome Icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<!-- add AngularJS framework -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+        <!-- reference jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		
+        <title>Yiqiu's Personal Website</title>
+		
+        
+		<script src="js/modernizr.custom.js"></script>
+<!--        <script src="js/imgchange.js"></script>-->
+	</head>
+    
+    
+	<body>
+		<div class="container">	
+			<div id="main" class="main">
+				<section>
+					<div class="box">
+						<h2><i class="fa fa-meh-o" aria-hidden="true"></i><br>About</h2>
+					</div>
+					<div class="content">
+                        <h2>About Me</h2>
+                        
+                        
+                        <img class="img-profile2" src="images/profile2.png">
+                        <img class="img-profile1" src="images/profile1.png">
+                        <p class="p-about">I am a web developer. My favorite part about web programming is that it can seem like a very prescriptive, direct, binary kind of job, but there’s actually a lot of creativity and ingenuity involved. <br><br>I am an alumna of <a href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, graduating with a major in Electrical Engineering. Originally from Dalian, China, but now residing in Montreal, Canada.<br><br>I want to improve my programming skills and join an amazing team. Take some time to look at my credentials and this page which I designed recently. If you're interested in helping me make this happen, let's get in touch.</p>
+                        </div>
+					
+                    
+					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+				</section>
+                
+				<section>
+					<div class="box">
+						<h2><i class="fa fa-pencil-square-o" aria-hidden="true"></i><br>Projects</h2>
+					</div>
+					<div class="content">
+						<h2>My Projects</h2><br><br>
+                        <ul class="ul-project">
+                            <li>
+                                <img class="img-project" src="images/project1.jpg" />
+                                <b>Design of my personal website</b>
+                                <p>Techniques used: HTML5,CSS3,JavaScript,jQuery,Media Queries,Responsive Web Layout...<br>Source Code Link: <a href="https://github.com/Yiqiuuuuuu/yiqiuuuuuu.github.io">Github Repository - yiqiuuuuuu.github.io</a></p>
+                            
+                            </li><br>
+                            <li>
+                                <img class="img-project" src="images/project2.png" />
+                                <b>Design of a website for a Milk-Tea Store</b>
+                                <p>Techniques used: PHP,AJAX,JSON,MySQL...<br>Source Code Link: <a href="https://github.com/Yiqiuuuuuu/milk-tea">Github Repository - MilkTea</a></p>
+                            
+                            </li>
+                        
+                        </ul>
+                        
+							
+					</div>
+					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+				</section>
+                
+				<section>
+					<div class="box">
+						<h2><i class="fa fa-file-text-o" aria-hidden="true"></i><br>Resume</h2>
+					</div>
+					<div class="content">
+                        <h2>My Resume</h2>
+                        
+						<b>Yiqiu Wang</b><br>
+                        <b>Email: <a href="mailto:mlle.qiu@outlook.com">mlle.qiu@outlook.com</a></b><br>
+                        <b>Address: Montreal, QC CANADA</b><br>
+                        
+                        <p>A programmer engaged in web development and user interface design. Keen to work on new and existing micro-sites, landing pages, and templates and provide guidance and troubleshooting support to clients. Currently looking for a new position. </p><br>
+                        
+                        <b><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp Skills</b>
+                        <p class="p-resume">Markup Languages/ Programming Languages/ Framework/ Library:</p>
+                        <ul class="ul-resume">
+                            <li>Front-end: 
+                                <div class="drop" style="background-color: #fdb933;">XTHML and HTML5</div>, <div class="drop" style="background-color: #fdb933;">CSS and CSS3</div>, <div class="drop" style="background-color: #fdb933;">JavaScript</div>, <div class="drop" style="background-color: #fdb933;">JSON</div>, <div class="drop" style="background-color: #fdb933;">AJAX</div>, <div class="drop" style="background-color: #fdb933;">jQuery</div>, <div class="drop" style="background-color: #fdb933;">AngularJS</div></li>
+                            
+                            <li>Server-side(basic knowledge): <div class="drop" style="background-color: #f47a55;">Java</div>, <div class="drop" style="background-color: #f47a55;">PHP</div>, <div class="drop" style="background-color: #f47a55">MySQL</div></li>
+                        </ul><br>
+                        
+                        <p class="p-resume">Tools/IDEs:</p>
+                        <ul class="ul-resume">
+                            <li><div class="drop" style="background-color: #f47a55;">Brackets, Eclipse</div></li>
+                            <li><div class="drop" style="background-color: #fdb933;">SVN and Git</div></li>
+                        </ul><br>
+                        
+                        <p class="p-resume">Enviroments:</p>
+                        <ul class="ul-resume">
+                            <li>Windows</li>
+                            <li>Linux</li>
+                        </ul>
+                        
+                        <br><br>
+                        <b><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp Professional Employment</b><br>
+                        
+                        <p class="p-resume">Junior Software Engineer &nbsp &nbsp Apr.2016-Feb.2017</p>
+                        <p class="p-resume"><a href="http://www.dhc.com.cn/en/index.action">Dalian Hi-Think Computer Technology, Corp.</a>, an IT company provides leading application software products, information service and industrial solutions for global customers.</p> 
+                        
+                        <ul class="ul-resume">
+                            <li>Consulted with clients, identified their requirements, maintained and developed cordial relationship with them.</li>
+                            <li>Provided serial-to-ethernet solution for industrial serial machines using <a class="content-link" href="https://en.wikipedia.org/wiki/Network_switch">Network Switch</a> and <a class="content-link" href="http://www.moxa.com/product/NPort_5110.htm">Serial Device Servers</a>.</li>
+                            <li>Decoded private communication protocols of clients' mechanical machines using Java.</li>
+                            <li>Designed  the user interface of the customized industrial Intelligence Manufacturing (IM) System using HTML, CSS, JavaScript and JSON.</li>
+                            <li>Prepared technical materials for clients' reference, guided clients in incorporating the product in their work set up.</li>
+                        </ul><br><br>
+                        
+                        <b><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp Degrees</b>
+                        <ul class="ul-resume">
+                            <li>Master of Applied Science in Electrical Engineering<br><a class="content-link" href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, Montreal, QC Canada<br>Jan.2013-October.2015</li>
+                            <li>Bachelor of Science in Electrical Engineering<br><a class="content-link" href="http://en.dlut.edu.cn/">Dalian University of Technology</a>, Dalian, LN China<br>Sep.2008-Jun.2012</li>
+                        </ul>
+                        <br><br>
+                        
+                       
+					</div>
+					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+				</section>
+                
+				<section>
+					<div class="box">
+						<h2><i class="fa fa-envelope-o" aria-hidden="true"></i><br>Contact</h2>
+					</div>
+					<div class="content">
+						<h2>Get In Touch</h2>
+                        <div class="div-form">
+                            <form action="https://formspree.io/mlle.qiu@outlook.com" method="POST">
+                                <label for="fn">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                                
+                                <label for="ln">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                
+                                <label for="email">Email Address</label>
+                                <input type="text" id="email" name="email" placeholder="Your email address..">
+                                
+                                <label for="message">Message</label>
+                                <textarea name="message"></textarea>
+
+                                <input type="submit" value="Send Message">
+                            </form>
+                        </div>
+					</div>
+					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+				</section>
+            </div>
+		</div><!-- /container -->
+		
+		<script src="js/boxlayout.js"></script>
+		<script>
+			$(function() {
+				Boxlayout.init();
+			});
+		</script>
+        
+        
+		<div style="text-align:center;clear:both;">
+            <p style="color:black"><i class="fa fa-copyright" aria-hidden="true"></i>Yiqiu 2017</p>
+        </div>
+        
+        
+	</body>
+</html>
