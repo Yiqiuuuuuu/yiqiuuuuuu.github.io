@@ -23,7 +23,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+/*    text-decoration: none;*/
     color:inherit;
 }
 
@@ -146,8 +146,21 @@ a:hover {
 	padding-bottom: 15px;
 	font-size: 1.7em;
 	line-height: 1.5;
-    text-align: justify;
-    text-justify: inter-word;
+/*    text-align: justify;*/
+/*    text-justify: inter-word;*/
+}
+.highlight {
+    background-color: #5e7c85;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    display:inline-block;
+    border-radius: 4px;
+	padding-bottom: 15px;
+	font-size: 1.7em;
+	line-height: 1.5;
 }
 
 .content h2 {
@@ -258,18 +271,33 @@ ul.ul-resume {
 	line-height: 1.6;
 }
 
-ul.ul-project {
-    list-style-type: none;  
-    width: 100%;
-    padding-left: 0;
-}
+
 
 .img-project {
     width: 200px;
-    float: left;
     border-radius: 10px;
-    margin: 0 15px 0 0; 
+    margin: 10px;
 }
+div.description {
+    padding: 10px;
+}
+div.project {
+    padding: 0 10px;
+    float: left;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+div.gallery {
+/*    border: 1px solid #ccc;*/
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.gallery:hover {
+    border: 1px solid white;
+}
+
 
 
 
@@ -377,6 +405,11 @@ div.drop {
     transition: transform 0.2s ease;  
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 div.drop:hover {
     -moz-transform: translateY(20px); 
     -ms-transform: translateY(20px); 
@@ -398,7 +431,7 @@ div.drop:hover {
 
 
 
-@media screen and (max-width: 46.5em) {
+@media screen and (max-width: 768px) {
 	.content,
 	.box {
 		font-size: 75%;
@@ -430,6 +463,9 @@ div.drop:hover {
     .div-form {
         width:100%;
     }
+    div.project {
+    width:100%;
+}
 
 }
 
