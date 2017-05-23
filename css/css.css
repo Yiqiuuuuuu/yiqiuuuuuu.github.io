@@ -464,8 +464,11 @@ div.drop:hover {
         width:100%;
     }
     div.project {
-    width:100%;
-}
+	width:100%;
+    }
+    .img-project {
+        width: 160px;
+    }
 
 }
 
