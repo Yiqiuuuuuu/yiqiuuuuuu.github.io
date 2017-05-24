@@ -295,7 +295,7 @@ div.gallery {
 }
 
 div.gallery:hover {
-    border: 1px solid white;
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
 }
 
 
@@ -464,10 +464,10 @@ div.drop:hover {
         width:100%;
     }
     div.project {
-	width:100%;
+        width:100%;
     }
     .img-project {
-        width: 160px;
+        width: 180px;
     }
 
 }
