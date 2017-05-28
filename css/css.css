@@ -172,13 +172,15 @@ a:hover {
 
 
 .p-about {
-    position: absolute;
-    top:205px;
-    left:20px;
-    margin: auto;
-    width: 1255px;
+    position:absolute;
     color:black;
-    margin: auto;
+    background-color: white;
+    width: 100%;
+    height: 320px;
+    top: 203px;
+    padding: 20px;
+    overflow: hidden;
+	overflow-y: auto;
 }
 
 
@@ -444,22 +446,25 @@ div.drop:hover {
 /*
 	.content > ul li {
 		width: 40%;
-	}
-*/
-    .p-about {
+	}*/
+
+/*    .p-about {
         position: absolute;
         top:265px;
         left:10px;
         margin: auto;
         width: 280px;
         color:black;
-    }
+    }*/
+*/
+/*
     .img-profile2 {
         opacity:0;
     }
     .img-profile1 {
         opacity:1;
     }
+*/
     .div-form {
         width:100%;
     }
@@ -473,3 +478,17 @@ div.drop:hover {
 }
 
 
+
+.img-profile5 {
+    position:absolute;
+    right:0;
+    top:38px;
+}
+
+
+
+.img-profile6 {
+    position:absolute;
+    right: 0;
+    top:540px;
+}

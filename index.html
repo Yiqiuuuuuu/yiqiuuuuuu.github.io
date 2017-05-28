@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-                <meta name="keywords" content=" Yiqiu's Personal Website, Yiqiu's Github User Page">  
+        <meta name="keywords" content=" Yiqiu's Personal Website, Yiqiu's Github User Page">  
 		<meta name="description" content="This website was developed by Yiqiu who is a web developer.">
 		<meta name="author" content="Yiqiu">
 		
@@ -18,17 +18,56 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
 		<!-- add AngularJS framework -->
-                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
-                <!-- reference jQuery library -->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!-- reference jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		
-                <title>Yiqiu's Personal Website</title>
+        <title>Yiqiu's Personal Website</title>
 		
         
 		<script src="js/modernizr.custom.js"></script>
 <!--        <script src="js/imgchange.js"></script>-->
-		
+
+<!--
+        
+        <script>
+            $(document).ready(function(){
+                var txt = "";
+                txt += "Width of div: " + $(".p-about").outerWidth() + "</br>";
+                
+                $h = $(".p-about").outerHeight();
+                txt += "Height of div: " + $h + "</br>";
+                
+                $hplus = (parseInt($h)+188).toString();
+                txt += "Height of div plus 188px: " + $hplus;
+                $("#test").html(txt);
+            });
+        </script>
+
+        
+        <script>
+            $(document).ready(function(){
+                $h = $(".p-about").outerHeight();
+                $hplus = (parseInt($h)+0).toString() + "px";
+                $(".img-profile6").css("top", $hplus);
+            });
+        </script>
+        
+        <script>
+            $(document).ready(function(){
+                $(window).resize(function(){
+                    $h = $(".p-about").outerHeight();
+                    $hplus = (parseInt($h)+0).toString()+"px";
+                    $(".img-profile6").css("top", $hplus);
+                });
+            });
+        </script>
+        
+        
+        
+-->
+        
 	</head>
     
     
@@ -44,9 +83,15 @@
 					<div class="content">
                         <h2>About Me</h2>
                         
+<!--
                         <img class="img-profile2" src="images/profile2.png">
                         <img class="img-profile1" src="images/profile1.png">
+-->
+                        <img class="img-profile6" src="images/profile6.png">
                         <p class="p-about">I am a person who loves technology. My favorite part about technology is that it can seem like a very prescriptive and logical kind of job, but there’s actually a lot of creativity and ingenuity involved. <br><br>I am an alumna of <a href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, graduating with a major in Electrical Engineering. Originally from Dalian, China, now residing in Montreal, Canada.<br><br>I want to improve my skills and join an amazing team. Take some time to look at my credentials and projects. If you happen to need someone just like me in your team, let's get in touch.</p>
+                        <p id="test"></p>
+                        <img id="img" class="img-profile5" src="images/profile5.png">
+                        
                         </div>
 					       
 					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
@@ -117,20 +162,20 @@
                         </div>
                         <!--END project4 -->
                         
-			</div>
-			<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
-	        </section>
+					</div>
+					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+				</section>
                 <!-- END Section2:Projects-->
                 
                 <!-- BEIGN Section3:Resume-->
-		<section>
-		        <div class="box">
-				<h2><i class="fa fa-file-text-o" aria-hidden="true"></i><br>Resume</h2>
-			</div>
-			<div class="content">
+				<section>
+					<div class="box">
+						<h2><i class="fa fa-file-text-o" aria-hidden="true"></i><br>Resume</h2>
+					</div>
+					<div class="content">
                         <h2>My Resume</h2>
                         
-			<b>Yiqiu Wang</b><br>
+						<b>Yiqiu Wang</b><br>
                         <b>Email: <a href="mailto:mlle.qiu@outlook.com">mlle.qiu@outlook.com</a></b><br>
                         <b>Address: Montreal, QC CANADA</b><br>
                         
@@ -181,18 +226,18 @@
                         <br><br>
                         
                        
-			</div>
-			<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
-		</section>
+					</div>
+					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+				</section>
                 <!-- END Section3:Resume-->
                 
                 <!-- BEGIN Section4:Contact-->
-		<section>
-			<div class="box">
-				<h2><i class="fa fa-envelope-o" aria-hidden="true"></i><br>Contact</h2>
-			</div>
-			<div class="content">
-			<h2>Get In Touch</h2>
+				<section>
+					<div class="box">
+						<h2><i class="fa fa-envelope-o" aria-hidden="true"></i><br>Contact</h2>
+					</div>
+					<div class="content">
+						<h2>Get In Touch</h2>
                         <div class="div-form">
                             <form action="https://formspree.io/mlle.qiu@outlook.com" method="POST">
                                 <label for="fn">First Name</label>
@@ -210,12 +255,12 @@
                                 <input type="submit" value="Send Message">
                             </form>
                         </div>
-			</div>
-			<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
-		</section>
+					</div>
+					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+				</section>
                 <!-- END Section4:Contact-->
             </div>
-	</div><!-- /container -->
+		</div><!-- /container -->
 		
 		<script src="js/boxlayout.js"></script>
 		<script>
