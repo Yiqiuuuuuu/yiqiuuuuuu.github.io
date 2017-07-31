@@ -1,279 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        
-        <meta name="keywords" content=" Yiqiu's Personal Website, Yiqiu's Github User Page">  
-		<meta name="description" content="This website was developed by Yiqiu who is a web developer.">
-		<meta name="author" content="Yiqiu">
-		
-		<!-- take control over the viewport -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="css/css.css" />
-				
-		<!-- link to Font Awesome Icons -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
-		<!-- add AngularJS framework -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-
-        <!-- reference jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		
-        <title>Yiqiu's Personal Website</title>
-		
-        
-		<script src="js/modernizr.custom.js"></script>
-<!--        <script src="js/imgchange.js"></script>-->
-
-<!--
-        
-        <script>
-            $(document).ready(function(){
-                var txt = "";
-                txt += "Width of div: " + $(".p-about").outerWidth() + "</br>";
-                
-                $h = $(".p-about").outerHeight();
-                txt += "Height of div: " + $h + "</br>";
-                
-                $hplus = (parseInt($h)+188).toString();
-                txt += "Height of div plus 188px: " + $hplus;
-                $("#test").html(txt);
-            });
-        </script>
-
-        
-        <script>
-            $(document).ready(function(){
-                $h = $(".p-about").outerHeight();
-                $hplus = (parseInt($h)+0).toString() + "px";
-                $(".img-profile6").css("top", $hplus);
-            });
-        </script>
-        
-        <script>
-            $(document).ready(function(){
-                $(window).resize(function(){
-                    $h = $(".p-about").outerHeight();
-                    $hplus = (parseInt($h)+0).toString()+"px";
-                    $(".img-profile6").css("top", $hplus);
-                });
-            });
-        </script>
-        
-        
-        
--->
-        
-	</head>
+<head>
+    <title>Yiqiu's Personal Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="keywords" content=" Yiqiu's Personal Website, Yiqiu's Github User Page">  
+    <meta name="description" content="This website was developed by Yiqiu who is a front-end web developer.">
+    <meta name="author" content="Yiqiu">   
+    
+<!-- Bootstrap MaxCDN BEGIN-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Bootstrap MaxCDN END -->
+    
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- google font -->
+    <link href='https://fonts.googleapis.com/css?family=Mada' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="css/css.css">
+</head>
     
     
-	<body>
-		<div class="container">	
-			<div id="main" class="main">
-				
-                <!-- BEIGN Section1:About-->
-                <section>
-					<div class="box">
-						<h2><i class="fa fa-meh-o" aria-hidden="true"></i><br>About</h2>
-					</div>
-					<div class="content">
-                        <h2>About Me</h2>
-                        
-<!--
-                        <img class="img-profile2" src="images/profile2.png">
-                        <img class="img-profile1" src="images/profile1.png">
--->
-                        <img class="img-profile6" src="images/profile6.png">
-                        <p class="p-about">I am a person who loves technology. My favorite part about technology is that it can seem like a very prescriptive and logical kind of job, but there’s actually a lot of creativity and ingenuity involved. <br><br>I am an alumna of <a href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, graduating with a major in Electrical Engineering. Originally from Dalian, China, now residing in Montreal, Canada.<br><br>I want to improve my skills and join an amazing team. Take some time to look at my credentials and projects. If you happen to need someone just like me in your team, let's get in touch.</p>
-                        <p id="test"></p>
-                        <img id="img" class="img-profile5" src="images/profile5.png">
-                        
-                        </div>
-					       
-					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
-				</section>
-                <!-- END Section1:About-->
-                
-                
-                <!-- BEIGN Section2:Projects-->
-				<section>
-					<div class="box">
-						<h2><i class="fa fa-pencil-square-o" aria-hidden="true"></i><br>Projects</h2>
-					</div>
-					<div class="content">
-						<h2>My Projects</h2><br><br>
-                        
-                        <!--BEGIN project1 -->
-                        <div class="project">
-                            <div class="gallery">
-                                <img class="img-project" src="images/project1.jpg" alt="Design of my personal website">
-                                <div class="description">
-                                    <b>Design of my personal website</b>
-                                    <p>Techniques used: HTML5, CSS3, JavaScript, jQuery, Media Queries, Responsive Web Layout...<br><br><i class="fa fa-github" aria-hidden="true"></i> Source Code Link: <a href="https://github.com/Yiqiuuuuuu/yiqiuuuuuu.github.io">yiqiuuuuuu.github.io</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--END project1 -->
-                        
-                        <!--BEGIN project2 -->
-                        <div class="project">
-                            <div class="gallery">
-                                <img class="img-project" src="images/project2.png" alt="Development of a website for a Milk-Tea Store">
-                                <div class="description">
-                                    <b>Development of a website for a Milk-Tea Store<br>(in progress)</b>
-                                    <p>Techniques used: PHP, AJAX, JSON, MySQL...<br><br><i class="fa fa-github" aria-hidden="true"></i> Source Code Link: <a href="https://github.com/Yiqiuuuuuu/milk-tea">MilkTea</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--END project2 -->
-                        
-                        <div class="clearfix"></div>
-						<p><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp Would you like to know a little bit about my Master and Bachelar projects? It`s more hardware side but still very interesting! Read the followings &nbsp<i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
-                        
-                        <!--BEGIN project3 -->
-                        <div class="project">
-                            <div class="gallery">
-                                <img class="img-project" src="images/project3.jpg" alt="Design of A CMOS Rectifier Chip Dedicated For Ambient RF Energy Harvesting">
-                                <div class="description">
-                                    <b>Design of A CMOS Rectifier Chip Dedicated For Ambient RF Energy Harvesting</b>
-                                    <p>Introduction: This project aims at studying and exploring the performance of different CMOS rectifiers under the condition that their input power is extremely low.</p>
-                                    <p>Techniques used: CMOS circuit and layout design, IBM130nm microfabrication technology, PCB design, wire-bonding...</p>
-                                    <p>Publication: <a href="http://ieeexplore.ieee.org/document/7049951/"> Wang, Y.; Sawan, M., "High-efficiency CMOS rectifier dedicated for multi-band ambient RF energy harvesting," Electronics, Circuits and Systems (ICECS), 2014 21st IEEE International Conference on , vol., no., pp.179,182, 7-10 Dec. 2014.</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--END project3 -->
-                        
-                        <!--BEGIN project4 -->
-                        <div class="project">
-                            <div class="gallery">
-                                <img class="img-project" src="images/project4.jpg" alt="Modeling and simulation of AN Elevator Control System">
-                                <div class="description">
-                                    <b>Modeling and Simulation of An Elevator Control System</b>
-                                    <p>Introduction: This project is about developing a VHDL program to realize the operation logic of a 6-Story elevator (whose control system is modelled using Altera CPLD EPM240T100C5N with luminous diodes, resistors and so on) with its probable events regarding the up and downwards movement using Quartus9.0 software.
-                                    </p>
-                                    <p>Techniques used: VDHL...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--END project4 -->
-                        
-					</div>
-					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
-				</section>
-                <!-- END Section2:Projects-->
-                
-                <!-- BEIGN Section3:Resume-->
-				<section>
-					<div class="box">
-						<h2><i class="fa fa-file-text-o" aria-hidden="true"></i><br>Resume</h2>
-					</div>
-					<div class="content">
-                        <h2>My Resume</h2>
-                        
-						<b>Yiqiu Wang</b><br>
-                        <b>Email: <a href="mailto:mlle.qiu@outlook.com">mlle.qiu@outlook.com</a></b><br>
-                        <b>Address: Montreal, QC CANADA</b><br>
-                        
-                        <p>Love technology; Be keen on front-end web program/ design; Have basic knowledge of the server-side programming languages: C/C++, Java and PHP; Have experience of hardware design and VHDL programming; Currently looking for a new position. </p><br>
-                        
-                        <b><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp Skills</b>
-                        <p class="p-resume">Markup Languages/ Programming Languages/ Framework/ Library:</p>
-                        <ul class="ul-resume">
-                            <li>Front-end: 
-                                <div class="drop" style="background-color: #fdb933;">XTHML and HTML5</div>, <div class="drop" style="background-color: #fdb933;">CSS and CSS3</div>, <div class="drop" style="background-color: #fdb933;">JavaScript</div>, <div class="drop" style="background-color: #fdb933;">JSON</div>, <div class="drop" style="background-color: #fdb933;">AJAX</div>, <div class="drop" style="background-color: #fdb933;">jQuery</div>, <div class="drop" style="background-color: #fdb933;">AngularJS</div></li>
-                            
-                            <li>Server-side(understanding level): <div class="drop" style="background-color: #f47a55;">C/C++</div>,<div class="drop" style="background-color: #f47a55;">Java</div>, <div class="drop" style="background-color: #f47a55;">PHP</div>, <div class="drop" style="background-color: #f47a55">SQL(MySQLi extension)</div></li>
-                        </ul><br>
-                        
-                        <p class="p-resume">Tools/IDEs:</p>
-                        <ul class="ul-resume">
-                            <li><div class="drop" style="background-color: #f47a55;">Brackets, Eclipse,  Visual Studio</div></li>
-                            <li><div class="drop" style="background-color: #fdb933;">SVN and Git</div></li>
-                        </ul><br>
-                        
-                        <p class="p-resume">Enviroments:</p>
-                        <ul class="ul-resume">
-                            <li>Windows</li>
-                            <li>Linux</li>
-                        </ul>
-                        
-                        <br><br>
-                        <b><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp Professional Employment</b><br>
-                        
-                       
-                        <p class="p-resume"><a href="http://www.dhc.com.cn/en/index.action">Dalian Hi-Think Computer Technology, Corp.</a></p>
-                        <p class="p-resume">Junior Software Engineer &nbsp &nbsp Apr.2016-Feb.2017</p>
-                        <p class="p-resume">Project: Development of L-Neuro System</p> 
-                        
-                        <ul class="ul-resume">
-                            <li>L-Neuro is a kind of industrial intelligent manufacturing control system, it makes industrial hardware equipment to be connected to the Ethernet , and display data to the user on web page where the user can also send commands to a certain machine, changing the traditional mode of industrial production.</li>
-                            <li>Used HTML and CSS to design the web pages of the system; Designed complex tables with JavaScript and jQuery to display the data requested by users; Used AJAX and JSON to realize the user's request for database operations.</li>
-                            <li>Used Java (network communication framework Netty) to decode the messages received at the server from different machines, and store all logic operational data; Used Java to encode the data to be sent from the server to a machine to meet the corresponding tcp/ip private communication protocol of the machine.</li>
-                            <li>Provided serial-to-ethernet solution for serial machines; Ordered <a class="content-link" href="http://www.moxa.com/product/NPort_5110.htm">Serial Device Servers</a> and deployed them on-site.</li>
-                            <li>Prepared technical materials for the clients' reference.</li>
-                        </ul><br><br>
-                        
-                        <b><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp Degrees</b>
-                        <ul class="ul-resume">
-                            <li>Master of Applied Science in Electrical Engineering<br><a class="content-link" href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, Montreal, QC Canada<br>Jan.2013-October.2015</li>
-                            <li>Bachelor of Science in Electrical Engineering<br><a class="content-link" href="http://en.dlut.edu.cn/">Dalian University of Technology</a>, Dalian, LN China<br>Sep.2008-Jun.2012</li>
-                        </ul>
-                        <br><br>
-                        
-                       
-					</div>
-					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
-				</section>
-                <!-- END Section3:Resume-->
-                
-                <!-- BEGIN Section4:Contact-->
-				<section>
-					<div class="box">
-						<h2><i class="fa fa-envelope-o" aria-hidden="true"></i><br>Contact</h2>
-					</div>
-					<div class="content">
-						<h2>Get In Touch</h2>
-                        <div class="div-form">
-                            <form action="https://formspree.io/mlle.qiu@outlook.com" method="POST">
-                                <label for="fn">First Name</label>
-                                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-                                
-                                <label for="ln">Last Name</label>
-                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                                
-                                <label for="email">Email Address</label>
-                                <input type="text" id="email" name="email" placeholder="Your email address..">
-                                
-                                <label for="message">Message</label>
-                                <textarea name="message"></textarea>
+    
+<body>
+<!-- menu BEGIN -->
+<nav class="navbar navbar-fixed-top c-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#myprojects">My Projects</a></li>
+        <li><a href="#contactme">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- menu END -->
 
-                                <input type="submit" value="Send Message">
-                            </form>
-                        </div>
-					</div>
-					<span class="icon-close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
-				</section>
-                <!-- END Section4:Contact-->
-            </div>
-		</div><!-- /container -->
-		
-		<script src="js/boxlayout.js"></script>
-		<script>
-			$(function() {
-				Boxlayout.init();
-			});
-		</script>
-        
-        
-		<div style="text-align:center;clear:both;">
-            <p style="color:black"><i class="fa fa-copyright" aria-hidden="true"></i>Yiqiu 2017</p>
+<!-- hero image&text BEGIN -->
+<div class="c-hero-image">
+    <div class="c-hero-cover"></div>
+    <div class="container">
+        <div class="c-hero-text">
+            <p>Hi, I'm Yiqiu.<br>I build & develop websites.</p>
         </div>
-        
-        
-	</body>
+    </div>
+    <div class="container hidden-xs c-hero-arrow">
+        <p>Learn more about what I do</p>
+        <a href="#aboutme" id="downArrow"><div class="scroll-indicator fa fa-chevron-down"></div></a>
+    </div>
+</div>
+<!-- hero image&text END -->
+    
+<!-- aboutme BEGIN-->
+<div id="aboutme" class="container">
+    <h1>About Me</h1>
+    <hr>
+    <img src="./pics/yiqiu_profile.jpg">
+    <p>I am a person who loves technology. My favorite part about technology is that it can seem like a very prescriptive and logical kind of job, but there’s actually a lot of creativity and ingenuity involved. <br><br>I am an alumna of <a href="http://www.polymtl.ca/">École Polytechnique de Montréal</a>, graduating with a major in Electrical Engineering. Originally from Dalian, China, now residing in Montreal, Canada.<br><br>I want to improve my skills and join an amazing team. Take some time to look at my credentials and projects. If you happen to need someone just like me in your team, let's get in touch.</p>
+</div>
+<!-- aboutme END-->
+    
+<!-- myprojects BEGIN-->
+<div id="myprojects">
+    <div class="container">
+        <h1>My LatestProjects</h1>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="col-md-6">
+            <div class="workprojects">
+            <img src="pics/projects1.png">
+            <div><a href="http://klfmedia.com/" target="_blank">CLICK TO VISIT THE WEBSITE</a></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="workprojects">
+            <img src="pics/projects2.png">
+            <div><a href="http://warehouseandgo.com/" target="_blank">CLICK TO VISIT THE WEBSITE</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- myprojects END-->
+
+<!-- contactme BEGIN -->
+<div id="contactme" class="container-fluid">
+    <h1>Contact Me</h1>
+    <form class="form-horizontal col-md-6 col-md-offset-3" action="https://formspree.io/mlle.qiu@outlook.com" method="POST">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="fn">First Name:</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" id="fname" name="firstname" placeholder="Your first name..">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="ln">Last Name:</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Your email address.." name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="message">Message:</label>
+      <div class="col-sm-10">
+          <textarea name="message" class="form-control"></textarea>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-1 col-sm-10">
+        <button type="submit" class="btn btn-default" value="Send Message">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+<!-- contactme END -->
+   
+<!-- footer BEGIN -->    
+<footer>
+    <div class="col-sm-12 col-xs-12">© 2017 Yiqiu</div>
+</footer>
+
+<!-- footer END -->  
+
+     
+<script type="text/javascript" src="./js/js.js"></script>
+   
+    
+</body>
 </html>
