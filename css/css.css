@@ -38,7 +38,7 @@ h2 {font-size: 1rem;}
 
 /* hero image&text BEGIN */
 .c-hero-image {
-    background-image: url("../pics/hero_image.JPG");
+    background-image: url("../pics/hero_image.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,34 +78,23 @@ h2 {font-size: 1rem;}
     left: 50%;
     transform: translateX(-50%);
 }
-.c-hero-arrow p{
-    opacity: 0.9;
+.c-hero-arrow a{
     filter: alpha(opacity=90);  
     color: white;
     font-size: 1.5rem;
     text-align: center;
 }
-.c-hero-arrow a div{
-    opacity: 0.9;
-    filter: alpha(opacity=90);  
+.c-hero-arrow a {
+    filter: alpha(opacity=90);
+    padding-top: 10px;
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
-    color: rgba(255, 255, 255, 0.9);
-    -moz-animation:bounce 1.5s infinite;  
-    -webkit-animation:bounce 1.5s infinite;
-    animation:bounce 1.5s infinite;  
 }
-@-webkit-keyframes bounce {
-    0%,100%,20%,50%,80%{-webkit-transform:translateY(0);transform:translateY(0)}
-    40%{-webkit-transform:translateY(-20px);transform:translateY(-20px)}
-    60%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}
+.c-hero-arrow a {
+    text-decoration: none;
 }
-@keyframes bounce {
-    0%,100%,20%,50%,80%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
-    40%{-webkit-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px)}
-    60%{-webkit-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px)}
-}
+
 /* hero image&text END */
 
 /* aboutme BEGIN */
@@ -116,38 +105,63 @@ h2 {font-size: 1rem;}
 }
 #aboutme img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     display: block;
     margin: 3rem auto;
+    border-width: 2px;
+    border-color: #eee;
+    border-style: double;
 }
 #aboutme p {
     font-size: 1.2rem;
 }
+
 /* aboutme END */
 
 /* myprojects BEGIN */
-#myprojects {
+#myprojects1, #myprojects2 {
     margin: 5rem auto;
     text-align: center;
     color: #666666;
     background-color: #fff;
 }
-.workprojects img {
+.workprojects1 img, .workprojects2 img {
     width: 100%;
     display: block;
     margin: auto;
 }
-.workprojects {
+.workprojects1, .workprojects2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 3rem 0rem;
 }
-.workprojects a {
+.workprojects1 a {
     color: #666666;
     display: block;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 1rem;
+}
+.githubtext {
+    font-size: 1.2rem;
+}
+.workprojects2 p {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 10px;
+}
+.workprojects2 p:first-child {
+    font-weight: bold;
+    padding-top: 30px;
+}
+.workprojects2 a {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: left;
+    padding: 0;
+    padding-bottom: 20px;
 }
 /* myprojects END */
 

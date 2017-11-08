@@ -25,6 +25,7 @@
     <link href='https://fonts.googleapis.com/css?family=Mada' rel='stylesheet'>
     
     <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
     
     
@@ -42,9 +43,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#aboutme">About Me</a></li>
-        <li><a href="#myprojects">My Projects</a></li>
-        <li><a href="#contactme">Contact Me</a></li>
+        <li><a href="#aboutme" class="scroll">About Me</a></li>
+        <li><a href="#myprojects1" class="scroll">My Projects</a></li>
+        <li><a href="#contactme" class="scroll">Contact Me</a></li>
       </ul>
     </div>
   </div>
@@ -52,22 +53,21 @@
 <!-- menu END -->
 
 <!-- hero image&text BEGIN -->
-<div class="c-hero-image">
+<div class="c-hero-image wow fadeIn" data-wow-duration="3s">
     <div class="c-hero-cover"></div>
     <div class="container">
         <div class="c-hero-text">
-            <p>Hi, I'm Yiqiu.<br>I build & develop websites.</p>
+            <p class="wow fadeIn" data-wow-duration="2s" data-wow-delay="4s">Hi, I'm Yiqiu :-)</p>
         </div>
     </div>
     <div class="container hidden-xs c-hero-arrow">
-        <p>Learn more about what I do</p>
-        <a href="#aboutme" id="downArrow"><div class="scroll-indicator fa fa-chevron-down"></div></a>
+        <a class="wow fadeIn scroll" href="#aboutme" id="downArrow" data-wow-duration="2s" data-wow-delay="5s">... Learn more about me ...</a>
     </div>
 </div>
 <!-- hero image&text END -->
     
 <!-- aboutme BEGIN-->
-<div id="aboutme" class="container">
+<div id="aboutme" class="container wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
     <h1>About Me</h1>
     <hr>
     <img src="./pics/yiqiu_profile.jpg">
@@ -75,31 +75,69 @@
 </div>
 <!-- aboutme END-->
     
-<!-- myprojects BEGIN-->
-<div id="myprojects">
+<!-- myprojects1 BEGIN-->
+<div id="myprojects1" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
     <div class="container">
-        <h1>My LatestProjects</h1>
+        <h1>My Latest Website Design Projects</h1>
         <hr>
     </div>
     <div class="container">
         <div class="col-md-6">
-            <div class="workprojects">
-            <img src="pics/projects1.png">
+            <div class="workprojects1">
+            <img src="pics/project1.png">
             <div><a href="http://klfmedia.com/" target="_blank">CLICK TO VISIT THE WEBSITE</a></div>
             </div>
         </div>
         <div class="col-md-6">
-            <div class="workprojects">
-            <img src="pics/projects2.png">
+            <div class="workprojects1">
+            <img src="pics/project2.png">
             <div><a href="http://warehouseandgo.com/" target="_blank">CLICK TO VISIT THE WEBSITE</a></div>
             </div>
         </div>
     </div>
+    <div class="container githubtext">
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <p>Welcome to visit <a href="https://github.com/Yiqiuuuuuu">my github repositories</a>, and if you find anything there could threaten the future of the universe, please yell at me in the contact form below.</p>
+    </div>
 </div>
-<!-- myprojects END-->
+<!-- myprojects1 END-->
+    
+    
+<!-- myprojects2 BEGIN-->
+<div id="myprojects2" class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+    <div class="container">
+        <h1>Some of my Interesting Academic Hardware Projects</h1>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="col-md-6">
+            <div class="workprojects2">
+                <img src="pics/project3.jpg">
+                <div>
+                    <p>Design of A CMOS Rectifier Chip For Ambient RF Energy Harvesting</p>
+                    <p><strong>Introduction:</strong> This project aims at studying and exploring the performance of different CMOS rectifiers under the condition that their input power is extremely low.</p>
+                    <p><strong>Techniques used:</strong> CMOS circuit and layout design, IBM130nm microfabrication technology, PCB design, wire-bonding...</p>
+                    <p><strong>Publication:</strong><a href="http://ieeexplore.ieee.org/document/7049951/"> Wang, Y.; Sawan, M., "High-efficiency CMOS rectifier dedicated for multi-band ambient RF energy harvesting," Electronics, Circuits and Systems (ICECS), 2014 21st IEEE International Conference on , vol., no., pp.179,182, 7-10 Dec. 2014.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="workprojects2">
+                <img src="pics/project4.jpg">
+                <div>
+                    <p>Modeling and Simulation of An Elevator Control System</p>
+                    <p><strong>Introduction:</strong> This project is about developing a VHDL program to realize the operation logic of a 6-Story elevator (whose control system is modelled using Altera CPLD EPM240T100C5N with luminous diodes, resistors and so on) with its probable events regarding the up and downwards movement using Quartus9.0 software.</p>
+                    <p style="padding-bottom:30px;"><strong>Techniques used:</strong> VDHL...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- myprojects2 END-->
+
 
 <!-- contactme BEGIN -->
-<div id="contactme" class="container-fluid">
+<div id="contactme" class="container-fluid wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
     <h1>Contact Me</h1>
     <form class="form-horizontal col-md-6 col-md-offset-3" action="https://formspree.io/mlle.qiu@outlook.com" method="POST">
     <div class="form-group">
@@ -137,14 +175,14 @@
    
 <!-- footer BEGIN -->    
 <footer>
-    <div class="col-sm-12 col-xs-12">© 2017 Yiqiu</div>
+    <div class="col-sm-12 col-xs-12">© 2017 Yiqiu - made with HEART</div>
 </footer>
 
 <!-- footer END -->  
 
      
 <script type="text/javascript" src="./js/js.js"></script>
-   
+<script type="text/javascript" src="./js/wow.min.js"></script>   
     
 </body>
 </html>
